@@ -163,12 +163,12 @@ function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Heart className="w-8 h-8 text-rose-500" />
-              <span className="text-2xl font-bold text-gray-800">ABC瘦身法</span>
+              <a href="#founder-story" className="text-2xl font-bold text-gray-800 hover:text-rose-500 transition-colors cursor-pointer">ABC瘦身法</a>
             </div>
             <div className="hidden md:flex space-x-6">
-              <a href="#founder-story" className="text-gray-600 hover:text-rose-500 transition-colors">理念</a>
-              <a href="#success-stories" className="text-gray-600 hover:text-rose-500 transition-colors">學員見證</a>
-              <a href="#about" className="text-gray-600 hover:text-rose-500 transition-colors">課程特色</a>
+              <a href="#about" className="text-gray-600 hover:text-rose-500 transition-colors">理念</a>
+              <a href="#testimonials" className="text-gray-600 hover:text-rose-500 transition-colors">學員見證</a>
+              <a href="#features" className="text-gray-600 hover:text-rose-500 transition-colors">課程特色</a>
               <a href="#contact" className="text-gray-600 hover:text-rose-500 transition-colors">聯繫我們</a>
             </div>
           </div>
@@ -176,18 +176,29 @@ function App() {
       </nav>
 
       {/* 創辦者故事橫幅 */}
-      <section id="founder-story" className="pt-24 pb-16 px-4">
+      <section className="pt-24 pb-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-rose-100 text-rose-700 hover:bg-rose-200">
-              創辦者真實故事
+              創辦者故事
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
               從月半子到幫助<span className="text-rose-500">3000+人</span>成功減重
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              愛情的力量，讓我找到<span className="font-semibold text-blue-600">人生最後一次減重</span>的秘密
+            <p className="text-xl md:text-2xl text-gray-600 mb-8">
+              愛情的力量，讓我找到<span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent font-bold">人生最後一次減重</span>的秘密
             </p>
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
+              <span className="bg-gradient-to-r from-rose-100 to-pink-100 text-rose-700 px-4 py-2 rounded-full font-semibold">
+                🍽️ 吃飽也能瘦
+              </span>
+              <span className="bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-700 px-4 py-2 rounded-full font-semibold">
+                ⏰ 瘦一輩子而不只是瘦一陣子
+              </span>
+              <span className="bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 px-4 py-2 rounded-full font-semibold">
+                🎯 最後一次瘦身
+              </span>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -317,9 +328,20 @@ function App() {
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
               不是給你魚吃，而是教你釣魚
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-600 mb-4">
               3000+人成功驗證的飲食策略，不是制式菜單
             </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Badge className="bg-rose-100 text-rose-700 hover:bg-rose-200 px-4 py-2">
+                🎯 最後一次瘦身
+              </Badge>
+              <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-200 px-4 py-2">
+                🍽️ 吃飽也能瘦
+              </Badge>
+              <Badge className="bg-green-100 text-green-700 hover:bg-green-200 px-4 py-2">
+                ⏰ 瘦一輩子不復胖
+              </Badge>
+            </div>
           </div>
           
           {/* 核心理念卡片 */}
@@ -590,163 +612,91 @@ function App() {
         </div>
       </section>
 
-      {/* ABC系統深度解釋 */}
-      <section className="py-16 px-4 bg-gradient-to-br from-purple-50 to-indigo-50">
+      {/* 全線上減重班特色 */}
+      <section className="py-16 px-4 bg-gradient-to-br from-blue-50 to-indigo-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
+            <Badge className="mb-4 bg-blue-100 text-blue-700 hover:bg-blue-200">
+              全線上服務
+            </Badge>
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              為什麼叫ABC？
+              🌍 世界各地都能參加的減重班
             </h2>
             <p className="text-xl text-gray-600">
-              不只是縮寫，是你的隨身減重工具
+              不限地點，即時支援，溫和有效
             </p>
           </div>
           
-          {/* ABC系統說明 */}
-          <div className="mb-16">
-            <Card className="p-8 bg-white shadow-lg">
-              <div className="text-center mb-8">
-                <h3 className="text-3xl font-bold text-gray-800 mb-4">
-                  🛠️ ABC隨身工具系統
-                </h3>
-                <p className="text-lg text-gray-600">
-                  學員說：「我每天都把ABC帶在身上，使用ABC一輩子」
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* 即時回覆 */}
+            <Card className="p-6 bg-white shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">⚡</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">營養師即時回覆</h3>
+                <p className="text-gray-600 mb-4">
+                  不用等很久才得到回覆，問題立即解答
                 </p>
+                <div className="space-y-2 text-sm text-gray-500">
+                  <p>• 傳了餐點立即得到建議</p>
+                  <p>• 有疑問隨時發問</p>
+                  <p>• 專業營養師在線支援</p>
+                </div>
               </div>
-              
-              {/* ABC詳細說明 */}
-              <div className="grid md:grid-cols-3 gap-8 mb-12">
-                <Card className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <div className="text-4xl mb-2">➕</div>
-                    <CardTitle className="text-2xl text-green-700">ADD 增加</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-700 mb-4">增加好的飲食習慣</p>
-                    <ul className="text-sm text-gray-600 space-y-2">
-                      <li>• 營養均衡的食物</li>
-                      <li>• 適合的運動習慣</li>
-                      <li>• 健康的生活節奏</li>
-                      <li>• 正確的營養知識</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-                
-                <Card className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <div className="text-4xl mb-2">🏗️</div>
-                    <CardTitle className="text-2xl text-blue-700">BUILD 建立</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-700 mb-4">建立新的生活型態</p>
-                    <ul className="text-sm text-gray-600 space-y-2">
-                      <li>• 可持續的習慣</li>
-                      <li>• 健康的心理狀態</li>
-                      <li>• 長期的改變模式</li>
-                      <li>• 自信的生活態度</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-                
-                <Card className="text-center p-6 bg-gradient-to-br from-red-50 to-red-100 hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <div className="text-4xl mb-2">❌</div>
-                    <CardTitle className="text-2xl text-red-700">CANCEL 拿掉</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-700 mb-4">拿掉不健康的習慣</p>
-                    <ul className="text-sm text-gray-600 space-y-2">
-                      <li>• 易胖的飲食習慣</li>
-                      <li>• 不健康的生活方式</li>
-                      <li>• 負面的思維模式</li>
-                      <li>• 短期的極端做法</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
+            </Card>
 
-              {/* ABC實用性展示 */}
-              <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-center text-gray-800 mb-6">
-                  🌟 ABC如何在生活中使用？
-                </h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  <div className="text-center">
-                    <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md">
-                      <span className="text-2xl">🍽️</span>
-                    </div>
-                    <h4 className="font-bold text-gray-800 mb-2">外食時</h4>
-                    <p className="text-sm text-gray-600">用ABC選擇策略，任何餐廳都能健康吃</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md">
-                      <span className="text-2xl">🎉</span>
-                    </div>
-                    <h4 className="font-bold text-gray-800 mb-2">聚餐時</h4>
-                    <p className="text-sm text-gray-600">用ABC應對方法，享受聚餐不怕胖</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md">
-                      <span className="text-2xl">😰</span>
-                    </div>
-                    <h4 className="font-bold text-gray-800 mb-2">壓力時</h4>
-                    <p className="text-sm text-gray-600">用ABC調節技巧，不再用食物紓壓</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md">
-                      <span className="text-2xl">✈️</span>
-                    </div>
-                    <h4 className="font-bold text-gray-800 mb-2">旅行時</h4>
-                    <p className="text-sm text-gray-600">用ABC維持習慣，旅行回來不變胖</p>
-                  </div>
+            {/* 線上運動課 */}
+            <Card className="p-6 bg-white shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🏃‍♀️</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">溫和線上運動課</h3>
+                <p className="text-gray-600 mb-4">
+                  全直播，種類多樣，有問題即時發問
+                </p>
+                <div className="space-y-2 text-sm text-gray-500">
+                  <p>• 溫和不激烈的運動</p>
+                  <p>• 多種課程選擇</p>
+                  <p>• 直播互動即時指導</p>
+                </div>
+              </div>
+            </Card>
+
+            {/* 全球服務 */}
+            <Card className="p-6 bg-white shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🌏</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">不限地點參加</h3>
+                <p className="text-gray-600 mb-4">
+                  世界各地都能參加，時區不是問題
+                </p>
+                <div className="space-y-2 text-sm text-gray-500">
+                  <p>• 海外學員也能參與</p>
+                  <p>• 彈性時間安排</p>
+                  <p>• 全球華人都適用</p>
                 </div>
               </div>
             </Card>
           </div>
-          
-          {/* 學員見證ABC的價值 */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">
-              學員怎麼說ABC？
-            </h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-r from-rose-100 to-pink-100 p-6 rounded-lg">
-                <p className="text-lg font-bold text-rose-700 mb-2">
-                  「我每天都把ABC帶在身上」
-                </p>
-                <p className="text-gray-600 mb-2">
-                  不管是外食、聚餐、出差，我都會想到ABC的策略。它不是課程，是我的生活工具。
-                </p>
-                <p className="text-sm text-gray-500">- 小慧，三期學員班長</p>
-              </div>
-              <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-6 rounded-lg">
-                <p className="text-lg font-bold text-blue-700 mb-2">
-                  「ABC讓我知道怎麼應對各種情況」
-                </p>
-                <p className="text-gray-600 mb-2">
-                  以前遇到聚餐就放棄，現在用ABC策略，既能享受又不怕胖。這是一輩子受用的方法。
-                </p>
-                <p className="text-sm text-gray-500">- 溫溫，文字工作者</p>
-              </div>
-            </div>
-            
-            <div className="mt-8 text-center">
-              <div className="bg-gradient-to-r from-purple-100 to-indigo-100 p-6 rounded-lg">
-                <p className="text-xl font-bold text-purple-700 mb-2">
-                  為什麼ABC這麼重要？
-                </p>
-                <p className="text-gray-600">
-                  因為它不是短期的課程或方法，而是你可以隨身攜帶、終身使用的減重工具系統。
-                  這就是為什麼我們要做市場區隔，因為其他方法都沒有這種「隨身工具」的概念。
-                </p>
-              </div>
+
+          {/* 特色標籤 */}
+          <div className="text-center">
+            <div className="inline-flex flex-wrap gap-3 bg-white/50 backdrop-blur-sm rounded-full px-6 py-3">
+              <span className="bg-white/20 px-4 py-2 rounded-full">即時回覆</span>
+              <span className="bg-white/20 px-4 py-2 rounded-full">線上直播</span>
+              <span className="bg-white/20 px-4 py-2 rounded-full">全球服務</span>
+              <span className="bg-white/20 px-4 py-2 rounded-full">溫和運動</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* 重點成功案例 */}
-      <section id="success-stories" className="py-16 px-4 bg-gradient-to-br from-rose-50 to-pink-50">
+      <section className="py-16 px-4 bg-gradient-to-br from-rose-50 to-pink-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-rose-100 text-rose-700 hover:bg-rose-200">
@@ -1112,278 +1062,6 @@ function App() {
             <p className="text-lg text-gray-600">
               我們相信每個人都有自己的節奏，重要的是開始並堅持下去
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 團隊力量展示 */}
-      <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              因為我們都胖過，所以我們懂你
-            </h2>
-            <p className="text-xl text-gray-600">
-              這群好友加在一起瘦超過300公斤
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="relative">
-              <img 
-                src="/team-photo.png" 
-                alt="ABC瘦身法班長合照 - 團隊力量" 
-                className="w-full h-auto"
-              />
-              <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full font-bold text-lg shadow-lg">
-                -300公斤+
-              </div>
-            </div>
-            
-            <div className="p-8">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                    珍惜的緣份，溫暖的大家庭
-                  </h3>
-                  <div className="space-y-4 text-gray-700">
-                    <p className="leading-relaxed">
-                      來自不同地方、不同年紀的我們，都曾經為肥胖所苦。
-                      因為ABC瘦身法而相遇，現在成為彼此最珍惜的支持力量。
-                    </p>
-                    <p className="leading-relaxed">
-                      我們有相同的理念：<strong className="text-rose-600">愛自己，也照顧自己，願意分享經驗支持他人。</strong>
-                      甚至海外回來的班長都會參加我們的聚會。
-                    </p>
-                    <p className="leading-relaxed">
-                      這就是ABC大家庭的溫暖 - 不只是減重方法，更是一生的友誼。
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="space-y-6">
-                  <Card className="p-6 bg-gradient-to-r from-rose-100 to-pink-100">
-                    <div className="flex items-center mb-3">
-                      <span className="text-2xl mr-3">🌍</span>
-                      <h4 className="font-bold text-gray-800">來自各地的支持</h4>
-                    </div>
-                    <p className="text-gray-600">
-                      不同城市、甚至海外的班長們，都因為ABC而成為好友
-                    </p>
-                  </Card>
-                  
-                  <Card className="p-6 bg-gradient-to-r from-blue-100 to-indigo-100">
-                    <div className="flex items-center mb-3">
-                      <span className="text-2xl mr-3">👥</span>
-                      <h4 className="font-bold text-gray-800">不同年紀的智慧</h4>
-                    </div>
-                    <p className="text-gray-600">
-                      從年輕到資深，每個人都有獨特的經驗可以分享
-                    </p>
-                  </Card>
-                  
-                  <Card className="p-6 bg-gradient-to-r from-green-100 to-emerald-100">
-                    <div className="flex items-center mb-3">
-                      <span className="text-2xl mr-3">💪</span>
-                      <h4 className="font-bold text-gray-800">集體的力量</h4>
-                    </div>
-                    <p className="text-gray-600">
-                      這群人加在一起瘦超過300公斤，證明ABC的有效性
-                    </p>
-                  </Card>
-                </div>
-              </div>
-              
-              <div className="mt-8 text-center">
-                <div className="bg-gradient-to-r from-yellow-100 to-orange-100 rounded-lg p-6">
-                  <p className="text-lg font-bold text-orange-700 mb-2">
-                    「因為減重班而變成好友，很珍惜的緣份」
-                  </p>
-                  <p className="text-gray-600">
-                    - 一休校長（中間穿白衣服）
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="text-center mt-12">
-            <p className="text-xl text-gray-700 mb-4">
-              加入ABC瘦身法，你得到的不只是健康的身體
-            </p>
-            <p className="text-lg text-gray-600">
-              更是一群真心支持你的好朋友
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 具體課程說明 */}
-      <section className="py-16 px-4 bg-gradient-to-br from-emerald-50 to-teal-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              常見問題解答
-            </h2>
-            <p className="text-xl text-gray-600">
-              讓我們回答你最關心的問題
-            </p>
-          </div>
-          
-          {/* 常見問題卡片 */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-2xl text-emerald-700 flex items-center">
-                  <span className="text-3xl mr-3">🤔</span>
-                  那是要怎麼瘦？
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-gray-700">
-                    <strong>用ABC系統 + 好友團陪伴</strong>
-                  </p>
-                  <ul className="text-gray-600 space-y-2">
-                    <li>• <strong>不是節食</strong>，是學會飲食策略</li>
-                    <li>• <strong>不是極端運動</strong>，是找到適合的方式</li>
-                    <li>• <strong>不是孤軍奮戰</strong>，是團隊陪伴</li>
-                    <li>• <strong>不是短期效果</strong>，是終身工具</li>
-                  </ul>
-                  <div className="bg-emerald-50 p-4 rounded-lg">
-                    <p className="text-emerald-700 font-medium">
-                      重點：教你釣魚，不是給你魚吃
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-2xl text-blue-700 flex items-center">
-                  <span className="text-3xl mr-3">📚</span>
-                  我需要上課嗎？
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-gray-700">
-                    <strong>3個月線上課程 + 個人化指導</strong>
-                  </p>
-                  <ul className="text-gray-600 space-y-2">
-                    <li>• <strong>線上課程</strong>：每週固定時間，在家就能上</li>
-                    <li>• <strong>小班制</strong>：個人化關注，不是大班授課</li>
-                    <li>• <strong>實作導向</strong>：邊學邊做，立即應用</li>
-                    <li>• <strong>終身受用</strong>：學會ABC工具，一輩子都能用</li>
-                  </ul>
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <p className="text-blue-700 font-medium">
-                      不是傳統上課，是學習生活工具
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-2xl text-purple-700 flex items-center">
-                  <span className="text-3xl mr-3">🤝</span>
-                  我需要配合什麼？
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-gray-700">
-                    <strong>簡單到只需要做這些</strong>
-                  </p>
-                  <ul className="text-gray-600 space-y-2">
-                    <li>• <strong>每天分享飲食</strong>：就像跟好朋友聊天</li>
-                    <li>• <strong>參與線上課程</strong>：每週1-2次，在家上課</li>
-                    <li>• <strong>學習ABC工具</strong>：簡單易懂的生活策略</li>
-                    <li>• <strong>跟著調整</strong>：溫和改變，不極端</li>
-                  </ul>
-                  <div className="bg-purple-50 p-4 rounded-lg">
-                    <p className="text-purple-700 font-medium">
-                      重點：配合度越高，效果越好
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-2xl text-rose-700 flex items-center">
-                  <span className="text-3xl mr-3">✅</span>
-                  這適合我嗎？
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-gray-700">
-                    <strong>特別適合這些人</strong>
-                  </p>
-                  <ul className="text-gray-600 space-y-2">
-                    <li>• <strong>反覆減肥失敗者</strong>：厭倦了溜溜球效應</li>
-                    <li>• <strong>忙碌上班族</strong>：沒時間複雜的方法</li>
-                    <li>• <strong>想要健康瘦身者</strong>：不要快速但要持久</li>
-                    <li>• <strong>需要陪伴支持者</strong>：不想孤軍奮戰</li>
-                  </ul>
-                  <div className="bg-rose-50 p-4 rounded-lg">
-                    <p className="text-rose-700 font-medium">
-                      如果你想要「瘦一輩子」，就適合ABC
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* 課程時間和投資說明 */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">
-              課程時間與投資
-            </h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-gradient-to-r from-green-100 to-emerald-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">⏰</span>
-                </div>
-                <h4 className="font-bold text-gray-800 mb-2">學習時間</h4>
-                <p className="text-gray-600">3個月系統化學習</p>
-                <p className="text-sm text-gray-500">每週2-3小時</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-gradient-to-r from-blue-100 to-indigo-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">🎯</span>
-                </div>
-                <h4 className="font-bold text-gray-800 mb-2">使用時間</h4>
-                <p className="text-gray-600">學會後終身使用</p>
-                <p className="text-sm text-gray-500">ABC隨身工具</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">💎</span>
-                </div>
-                <h4 className="font-bold text-gray-800 mb-2">投資價值</h4>
-                <p className="text-gray-600">健康一輩子的投資</p>
-                <p className="text-sm text-gray-500">比反覆減肥更划算</p>
-              </div>
-            </div>
-            
-            <div className="mt-8 text-center">
-              <div className="bg-gradient-to-r from-yellow-100 to-orange-100 p-6 rounded-lg">
-                <p className="text-lg font-bold text-orange-700 mb-2">
-                  為什麼值得投資？
-                </p>
-                <p className="text-gray-600">
-                  與其一次又一次花錢嘗試各種減肥方法，不如一次學會終身受用的ABC工具。
-                  這不只是減重課程，是健康生活的投資。
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

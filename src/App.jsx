@@ -1033,30 +1033,30 @@ function App() {
                 {/* 左側：故事內容 */}
                 <div>
                   <div className="mb-6">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-2">她的故事</h3>
-                    <div className="space-y-2 text-gray-600">
-                      <p><strong>年齡：</strong>40歲，文字工作者</p>
-                      <p><strong>困擾：</strong>工作需要三不五時得吃美食，體重一路來到近80公斤</p>
-                      <p><strong>痛點：</strong>高血壓前期，伴隨慢性身體各處發炎、頭痛、體力差</p>
-                      <p><strong>轉折：</strong>「不是老公覺得好就好，我也要自己覺得好才行！」</p>
-                      <p><strong>目標：</strong>重新找回健康自信的自己</p>
+                    <h3 className="text-2xl md:text-2xl font-bold text-gray-800 mb-2">她的故事</h3>
+                    <div className="space-y-2 text-gray-600 text-base md:text-base">
+                      <p className="text-base md:text-base"><strong>年齡：</strong>40歲，文字工作者</p>
+                      <p className="text-base md:text-base"><strong>困擾：</strong>工作需要三不五時得吃美食，體重一路來到近80公斤</p>
+                      <p className="text-base md:text-base"><strong>痛點：</strong>高血壓前期，伴隨慢性身體各處發炎、頭痛、體力差</p>
+                      <p className="text-base md:text-base"><strong>轉折：</strong>「不是老公覺得好就好，我也要自己覺得好才行！」</p>
+                      <p className="text-base md:text-base"><strong>目標：</strong>重新找回健康自信的自己</p>
                     </div>
                   </div>
                   
-                  <blockquote className="text-lg text-gray-700 italic mb-6 border-l-4 border-rose-200 pl-4">
+                  <blockquote className="text-lg md:text-lg text-gray-700 italic mb-6 border-l-4 border-rose-200 pl-4">
                     "老公說我這樣剛剛好，我差點就信了！曾經被溫柔的安慰話術麻痺，直到有一天突然人間清醒——要為自己而瘦！"
                   </blockquote>
                   
                   <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg">
-                    <h4 className="font-semibold text-green-800 mb-4">✨ 驚人成果</h4>
-                    <div className="grid grid-cols-2 gap-4 text-sm">
+                    <h4 className="font-semibold text-green-800 mb-4 text-lg md:text-lg">✨ 驚人成果</h4>
+                    <div className="grid grid-cols-2 gap-4 text-base md:text-sm">
                       <div className="text-green-700">
-                        <p className="font-medium">• 體重：80kg → 60kg</p>
-                        <p className="font-medium">• 體脂：35-37% → 29%</p>
+                        <p className="font-medium text-base md:text-base">• 體重：80kg → 60kg</p>
+                        <p className="font-medium text-base md:text-base">• 體脂：35-37% → 29%</p>
                       </div>
                       <div className="text-green-700">
-                        <p className="font-medium">• 血壓恢復正常</p>
-                        <p className="font-medium">• 重新穿回短裙</p>
+                        <p className="font-medium text-base md:text-base">• 血壓恢復正常</p>
+                        <p className="font-medium text-base md:text-base">• 重新穿回短裙</p>
                       </div>
                     </div>
                   </div>
@@ -1105,10 +1105,10 @@ function App() {
               
               <div className="mt-8 text-center">
                 <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-6 rounded-lg">
-                  <p className="text-lg text-gray-700 italic mb-2">
+                  <p className="text-lg md:text-lg text-gray-700 italic mb-2">
                     "很幸運，過往沒有什麼嗯哩嗯哩的減肥黑歷史"
                   </p>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-base md:text-base">
                     一開始就加入了正確的隊伍，在ABC加法練習下，沒有餓過、虐待過肚子的情況，婚前的小裙子我不僅僅穿下了，而且是「選擇繼續穿下」
                   </p>
                 </div>
@@ -1139,27 +1139,27 @@ function App() {
                 {/* 左側：故事內容 */}
                 <div>
                   <div className="mb-6">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-2">她的故事</h3>
-                    <div className="space-y-2 text-gray-600">
-                      <p><strong>身份：</strong>四寶媽，多次懷孕生產</p>
-                      <p><strong>困擾：</strong>多年反覆減肥，總是無法瘦下來</p>
-                      <p><strong>痛點：</strong>腹部肥胖嚴重，壓力大愛吃甜食舒壓</p>
-                      <p><strong>轉折：</strong>「這是我最後一次瘦身，不想再反覆復胖！」</p>
-                      <p><strong>目標：</strong>徹底改變生活方式，不再暴飲暴食</p>
+                    <h3 className="text-2xl md:text-2xl font-bold text-gray-800 mb-2">她的故事</h3>
+                    <div className="space-y-2 text-gray-600 text-base md:text-base">
+                      <p className="text-base md:text-base"><strong>身份：</strong>四寶媽，多次懷孕生產</p>
+                      <p className="text-base md:text-base"><strong>困擾：</strong>多年反覆減肥，總是無法瘦下來</p>
+                      <p className="text-base md:text-base"><strong>痛點：</strong>腹部肥胖嚴重，壓力大愛吃甜食舒壓</p>
+                      <p className="text-base md:text-base"><strong>轉折：</strong>「這是我最後一次瘦身，不想再反覆復胖！」</p>
+                      <p className="text-base md:text-base"><strong>目標：</strong>徹底改變生活方式，不再暴飲暴食</p>
                     </div>
                   </div>
                   
-                  <blockquote className="text-lg text-gray-700 italic mb-6 border-l-4 border-purple-200 pl-4">
+                  <blockquote className="text-lg md:text-lg text-gray-700 italic mb-6 border-l-4 border-purple-200 pl-4">
                     "已經失敗很多次了，我真的不想再這樣一直反覆復胖。這次一定要成功，為了孩子，也為了自己！"
                   </blockquote>
                   
                   <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg">
-                    <h4 className="font-semibold text-green-800 mb-4">✨ 驚人成果</h4>
+                    <h4 className="font-semibold text-green-800 mb-4 text-lg md:text-lg">✨ 驚人成果</h4>
                     <div className="space-y-2 text-green-700">
-                      <p className="font-medium">• 腹部明顯縮小，重拾自信</p>
-                      <p className="font-medium">• 學會健康飲食融入生活</p>
-                      <p className="font-medium">• 不再需要甜食舒壓</p>
-                      <p className="font-medium">• 不再擔心暴飲暴食</p>
+                      <p className="font-medium text-base md:text-base">• 腹部明顯縮小，重拾自信</p>
+                      <p className="font-medium text-base md:text-base">• 學會健康飲食融入生活</p>
+                      <p className="font-medium text-base md:text-base">• 不再需要甜食舒壓</p>
+                      <p className="font-medium text-base md:text-base">• 不再擔心暴飲暴食</p>
                     </div>
                   </div>
                 </div>

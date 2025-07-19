@@ -226,7 +226,7 @@ function App() {
               創辦者故事
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
-              從月半子到幫助<span className="text-rose-500">3000+人</span>成功減重
+              從胖子到幫助<span className="text-rose-500">3000+人</span>成功減重
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8">
               愛情的力量，讓我找到<span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent font-bold">人生最後一次減重</span>的秘密
@@ -250,10 +250,9 @@ function App() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">我的故事</h3>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
-                  <p>
-                    <strong className="text-rose-600">過去的我：</strong>
-                    總覺得反正我就是個月半子，每天大吃大喝就是我宣洩壓力的方式。
-                    但內心深處，我知道自己其實是不開心的...
+                  <p className="text-gray-600 leading-relaxed">
+                    總覺得反正我就是個胖子，每天大吃大喝就是我宣洩壓力的方式。
+                    但心深處，我知道自己其實是不開心的...
                   </p>
                   <p>
                     <strong className="text-blue-600">痛苦的循環：</strong>
@@ -408,7 +407,7 @@ function App() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-700 mb-4">隨時解答飲食疑問</p>
-                    <ul className="text-sm text-gray-600 space-y-2">
+                    <ul className="text-base md:text-sm text-gray-600 space-y-2">
                       <li>• 這樣吃可以嗎？</li>
                       <li>• 外食怎麼選？</li>
                       <li>• 聚餐怎麼辦？</li>
@@ -424,7 +423,7 @@ function App() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-700 mb-4">陪你找到適合的運動</p>
-                    <ul className="text-sm text-gray-600 space-y-2">
+                    <ul className="text-base md:text-sm text-gray-600 space-y-2">
                       <li>• 沒時間運動？</li>
                       <li>• 不會運動？</li>
                       <li>• 身體有限制？</li>
@@ -440,8 +439,8 @@ function App() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-700 mb-4">分享20年減重心得</p>
-                    <ul className="text-sm text-gray-600 space-y-2">
-                      <li>• 從月半子到-25kg</li>
+                    <ul className="text-base md:text-sm text-gray-600 space-y-2">
+                      <li>• 從胖子到-25kg</li>
                       <li>• 3000+學員經驗</li>
                       <li>• 溫暖的陪伴</li>
                       <li>• 實用的策略</li>
@@ -775,7 +774,7 @@ function App() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-gray-600 space-y-2">
+                  <ul className="text-base md:text-sm text-gray-600 space-y-2">
                     <li>• 營養均衡的食物</li>
                     <li>• 適合的運動習慣</li>
                     <li>• 健康的生活節奏</li>
@@ -796,7 +795,7 @@ function App() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-gray-600 space-y-2">
+                  <ul className="text-base md:text-sm text-gray-600 space-y-2">
                     <li>• 可持續的習慣</li>
                     <li>• 健康的心理狀態</li>
                     <li>• 長期的改變模式</li>
@@ -817,7 +816,7 @@ function App() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-gray-600 space-y-2">
+                  <ul className="text-base md:text-sm text-gray-600 space-y-2">
                     <li>• 易胖的飲食習慣</li>
                     <li>• 不健康的生活方式</li>
                     <li>• 負面的思維模式</li>

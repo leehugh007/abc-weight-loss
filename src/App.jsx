@@ -173,7 +173,7 @@ function App() {
             {/* 手機版重要連結 + 選單按鈕 */}
             <div className="md:hidden flex items-center space-x-4">
               <a 
-                href="#testimonials" 
+                href="#single-mom-story" 
                 className="text-gray-600 hover:text-rose-500 transition-colors font-medium"
               >
                 學員見證
@@ -944,7 +944,7 @@ function App() {
       </section>
 
       {/* 重點成功案例 */}
-      <section className="py-16 px-4 bg-gradient-to-br from-rose-50 to-pink-50">
+      <section id="single-mom-story" className="py-16 px-4 bg-gradient-to-br from-rose-50 to-pink-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-rose-100 text-rose-700 hover:bg-rose-200">

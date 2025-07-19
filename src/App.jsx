@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import { Heart, Users, Target, CheckCircle, Star, ArrowRight, Shield, Clock, Award } from 'lucide-react'
+import { Heart, Users, Target, CheckCircle, Star, ArrowRight, Shield, Clock, Award, Wrench, Plus, Hammer, X, Utensils, PartyPopper, Frown, Plane } from 'lucide-react'
 import './App.css'
 
 function App() {
@@ -690,6 +690,211 @@ function App() {
               <span className="bg-white/20 px-4 py-2 rounded-full">線上直播</span>
               <span className="bg-white/20 px-4 py-2 rounded-full">全球服務</span>
               <span className="bg-white/20 px-4 py-2 rounded-full">溫和運動</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 為什麼叫ABC？ */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              為什麼叫ABC？
+            </h2>
+            <p className="text-xl text-gray-600">
+              不只是縮寫，是你的隨身減重工具
+            </p>
+          </div>
+
+          {/* ABC隨身工具系統 */}
+          <div className="bg-white rounded-lg shadow-xl p-8 mb-12">
+            <div className="text-center mb-8">
+              <div className="flex justify-center mb-4">
+                <Wrench className="w-12 h-12 text-blue-500" />
+              </div>
+              <h3 className="text-3xl font-bold text-gray-800 mb-4">🛠️ ABC隨身工具系統</h3>
+              <p className="text-lg text-gray-600">
+                學員說：「我每天都把ABC帶在身上，使用ABC一輩子」
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* ADD 增加 */}
+              <Card className="text-center hover:shadow-lg transition-shadow duration-300 bg-green-50 border-green-200">
+                <CardHeader>
+                  <div className="flex justify-center mb-4">
+                    <Plus className="w-12 h-12 text-green-600" />
+                  </div>
+                  <CardTitle className="text-2xl text-green-600">ADD 增加</CardTitle>
+                  <CardDescription className="text-gray-600 text-lg">
+                    增加好的飲食習慣
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="text-sm text-gray-600 space-y-2">
+                    <li>• 營養均衡的食物</li>
+                    <li>• 適合的運動習慣</li>
+                    <li>• 健康的生活節奏</li>
+                    <li>• 正確的營養知識</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* BUILD 建立 */}
+              <Card className="text-center hover:shadow-lg transition-shadow duration-300 bg-blue-50 border-blue-200">
+                <CardHeader>
+                  <div className="flex justify-center mb-4">
+                    <Hammer className="w-12 h-12 text-blue-600" />
+                  </div>
+                  <CardTitle className="text-2xl text-blue-600">BUILD 建立</CardTitle>
+                  <CardDescription className="text-gray-600 text-lg">
+                    建立新的生活型態
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="text-sm text-gray-600 space-y-2">
+                    <li>• 可持續的習慣</li>
+                    <li>• 健康的心理狀態</li>
+                    <li>• 長期的改變模式</li>
+                    <li>• 自信的生活態度</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* CANCEL 拿掉 */}
+              <Card className="text-center hover:shadow-lg transition-shadow duration-300 bg-red-50 border-red-200">
+                <CardHeader>
+                  <div className="flex justify-center mb-4">
+                    <X className="w-12 h-12 text-red-600" />
+                  </div>
+                  <CardTitle className="text-2xl text-red-600">CANCEL 拿掉</CardTitle>
+                  <CardDescription className="text-gray-600 text-lg">
+                    拿掉不健康的習慣
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="text-sm text-gray-600 space-y-2">
+                    <li>• 易胖的飲食習慣</li>
+                    <li>• 不健康的生活方式</li>
+                    <li>• 負面的思維模式</li>
+                    <li>• 短期的極端做法</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* ABC如何在生活中使用 */}
+          <div className="bg-yellow-50 rounded-lg shadow-lg p-8 mb-12">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-gray-800 mb-4">
+                🌟 ABC如何在生活中使用？
+              </h3>
+            </div>
+
+            <div className="grid md:grid-cols-4 gap-6">
+              {/* 外食時 */}
+              <div className="text-center bg-white p-6 rounded-lg shadow-md">
+                <div className="flex justify-center mb-4">
+                  <Utensils className="w-8 h-8 text-orange-500" />
+                </div>
+                <h4 className="text-lg font-bold text-gray-800 mb-2">外食時</h4>
+                <p className="text-sm text-gray-600">
+                  用ABC選擇策略，任何餐廳都能健康吃
+                </p>
+              </div>
+
+              {/* 聚餐時 */}
+              <div className="text-center bg-white p-6 rounded-lg shadow-md">
+                <div className="flex justify-center mb-4">
+                  <PartyPopper className="w-8 h-8 text-purple-500" />
+                </div>
+                <h4 className="text-lg font-bold text-gray-800 mb-2">聚餐時</h4>
+                <p className="text-sm text-gray-600">
+                  用ABC應對方法，享受聚餐不怕胖
+                </p>
+              </div>
+
+              {/* 壓力時 */}
+              <div className="text-center bg-white p-6 rounded-lg shadow-md">
+                <div className="flex justify-center mb-4">
+                  <Frown className="w-8 h-8 text-blue-500" />
+                </div>
+                <h4 className="text-lg font-bold text-gray-800 mb-2">壓力時</h4>
+                <p className="text-sm text-gray-600">
+                  用ABC調節技巧，不再用食物紓壓
+                </p>
+              </div>
+
+              {/* 旅行時 */}
+              <div className="text-center bg-white p-6 rounded-lg shadow-md">
+                <div className="flex justify-center mb-4">
+                  <Plane className="w-8 h-8 text-green-500" />
+                </div>
+                <h4 className="text-lg font-bold text-gray-800 mb-2">旅行時</h4>
+                <p className="text-sm text-gray-600">
+                  用ABC維持習慣，旅行回來不變胖
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* 學員怎麼說ABC */}
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold text-gray-800 mb-8">
+              學員怎麼說ABC？
+            </h3>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* 學員見證1 */}
+            <Card className="bg-pink-50 border-pink-200 p-6">
+              <CardContent>
+                <div className="text-center mb-4">
+                  <h4 className="text-xl font-bold text-pink-700 mb-2">
+                    「我每天都把ABC帶在身上」
+                  </h4>
+                </div>
+                <p className="text-gray-700 mb-4">
+                  不管是外食、聚餐、出差，我都會想到ABC的策略。它不是課程，是我的生活工具。
+                </p>
+                <p className="text-sm text-gray-500 text-right">
+                  - 小慧，三期學員班長
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* 學員見證2 */}
+            <Card className="bg-blue-50 border-blue-200 p-6">
+              <CardContent>
+                <div className="text-center mb-4">
+                  <h4 className="text-xl font-bold text-blue-700 mb-2">
+                    「ABC讓我知道怎麼應對各種情況」
+                  </h4>
+                </div>
+                <p className="text-gray-700 mb-4">
+                  以前遇到聚餐就放棄，現在用ABC策略，既能享受又不怕胖。這是一輩子受用的方法。
+                </p>
+                <p className="text-sm text-gray-500 text-right">
+                  - 溫溫，文字工作者
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* 市場區隔說明 */}
+          <div className="bg-gradient-to-r from-rose-100 to-pink-100 rounded-lg p-8 mt-12">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                為什麼其他方法沒有「隨身工具」概念？
+              </h3>
+              <p className="text-lg text-gray-700 mb-4">
+                因為ABC瘦身法不只是減重方法，更是一套可以帶著走的生活策略
+              </p>
+              <p className="text-gray-600">
+                當你學會ABC，你就擁有了應對任何情況的能力，這就是為什麼學員說「使用ABC一輩子」
+              </p>
             </div>
           </div>
         </div>

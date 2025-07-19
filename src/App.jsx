@@ -2,11 +2,12 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import { Heart, Users, Target, CheckCircle, Star, ArrowRight, Shield, Clock, Award, Wrench, Plus, Hammer, X, Utensils, PartyPopper, Frown, Plane } from 'lucide-react'
+import { Heart, Users, Target, CheckCircle, Star, ArrowRight, Shield, Clock, Award, Wrench, Plus, Hammer, X, Utensils, PartyPopper, Frown, Plane, Menu } from 'lucide-react'
 import './App.css'
 
 function App() {
   const [activeTestimonial, setActiveTestimonial] = useState(0)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   // 學員見證數據
   const testimonials = [
@@ -44,11 +45,6 @@ function App() {
     },
 
     {
-      name: "Sam",
-      age: 44,
-      background: "工程師",
-      quote: "我不能倒下，家人還需要我。我必須為家人的未來負責。",
-      result: "三高指標明顯改善",
       name: "Sam",
       age: 44,
       background: "工程師",
@@ -165,13 +161,59 @@ function App() {
               <Heart className="w-8 h-8 text-rose-500" />
               <a href="#founder-story" className="text-2xl font-bold text-gray-800 hover:text-rose-500 transition-colors cursor-pointer">ABC瘦身法</a>
             </div>
+            
+            {/* 桌面版導航 */}
             <div className="hidden md:flex space-x-6">
               <a href="#about" className="text-gray-600 hover:text-rose-500 transition-colors">理念</a>
               <a href="#testimonials" className="text-gray-600 hover:text-rose-500 transition-colors">學員見證</a>
               <a href="#features" className="text-gray-600 hover:text-rose-500 transition-colors">課程特色</a>
               <a href="#contact" className="text-gray-600 hover:text-rose-500 transition-colors">聯繫我們</a>
             </div>
+            
+            {/* 手機版選單按鈕 */}
+            <button 
+              className="md:hidden p-2 text-gray-600 hover:text-rose-500 transition-colors"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <Menu className="w-6 h-6" />
+            </button>
           </div>
+          
+          {/* 手機版下拉選單 */}
+          {mobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
+              <div className="flex flex-col space-y-3 pt-4">
+                <a 
+                  href="#about" 
+                  className="text-gray-600 hover:text-rose-500 transition-colors py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  理念
+                </a>
+                <a 
+                  href="#testimonials" 
+                  className="text-gray-600 hover:text-rose-500 transition-colors py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  學員見證
+                </a>
+                <a 
+                  href="#features" 
+                  className="text-gray-600 hover:text-rose-500 transition-colors py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  課程特色
+                </a>
+                <a 
+                  href="#contact" 
+                  className="text-gray-600 hover:text-rose-500 transition-colors py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  聯繫我們
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
@@ -1065,7 +1107,7 @@ function App() {
                 {/* 右側：前後對比照片 */}
                 <div>
                   <h4 className="text-xl font-bold text-gray-800 mb-6 text-center">驚人的轉變</h4>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="text-center">
                       <div className="relative">
                         <img 
@@ -1167,7 +1209,7 @@ function App() {
                 {/* 右側：前後對比照片 */}
                 <div>
                   <h4 className="text-xl font-bold text-gray-800 mb-6 text-center">震撼的腹部改變</h4>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="text-center">
                       <div className="relative">
                         <img 
@@ -1268,6 +1310,68 @@ function App() {
               我們相信每個人都有自己的節奏，重要的是開始並堅持下去
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* 團隊力量展示 */}
+      <section className="py-16 px-4 bg-gradient-to-br from-orange-50 to-yellow-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <Badge className="mb-4 bg-orange-100 text-orange-700 hover:bg-orange-200">
+              團隊力量
+            </Badge>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              因為我們都胖過，所以我們懂你
+            </h2>
+            <p className="text-xl text-gray-600">
+              這群好友加在一起瘦超過300公斤
+            </p>
+          </div>
+          
+          <Card className="overflow-hidden shadow-2xl">
+            <div className="relative">
+              <img 
+                src="/班長合照.png" 
+                alt="ABC瘦身法班長大合照"
+                className="w-full h-auto"
+              />
+              <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full font-bold text-lg shadow-lg">
+                -300kg+
+              </div>
+            </div>
+            <div className="p-8">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                  ABC大家庭的溫暖聚會
+                </h3>
+                <p className="text-lg text-gray-700 mb-6">
+                  來自不同地方、不同年紀的我們，都曾經為肥胖所苦。因為ABC瘦身法而相遇，現在成為彼此最珍惜的支持力量。
+                </p>
+                <div className="grid md:grid-cols-3 gap-6 text-center">
+                  <div className="bg-rose-50 p-4 rounded-lg">
+                    <h4 className="font-bold text-rose-700 mb-2">共同理念</h4>
+                    <p className="text-sm text-gray-600">愛自己，也照顧自己，願意分享經驗支持他人</p>
+                  </div>
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <h4 className="font-bold text-blue-700 mb-2">珍貴緣份</h4>
+                    <p className="text-sm text-gray-600">因為減重班而變成好友，甚至海外回來的班長都會參加聚會</p>
+                  </div>
+                  <div className="bg-green-50 p-4 rounded-lg">
+                    <h4 className="font-bold text-green-700 mb-2">集體成果</h4>
+                    <p className="text-sm text-gray-600">這群人加在一起瘦超過300公斤，證明ABC瘦身法的威力</p>
+                  </div>
+                </div>
+                <div className="mt-8 bg-gradient-to-r from-orange-100 to-yellow-100 p-6 rounded-lg">
+                  <p className="text-lg text-gray-700 italic mb-2">
+                    "我們用眾人的力量來協助大家，因為我們都胖過，我們懂胖過的苦"
+                  </p>
+                  <p className="text-gray-600">
+                    健康瘦身不是少數人的特權，而是所有人都能做到
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
 
@@ -1428,8 +1532,8 @@ function App() {
                   2
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-800 mb-2">個人諮詢</h4>
-                  <p className="text-gray-600 text-sm">專業團隊了解你的需求，制定個人化方案</p>
+                  <h4 className="font-bold text-gray-800 mb-2">專業諮詢</h4>
+                  <p className="text-gray-600 text-sm">了解ABC瘦身法詳細內容，解答你的所有疑問</p>
                 </div>
               </div>
               <div className="flex items-start">

@@ -170,13 +170,21 @@ function App() {
               <a href="#contact" className="text-gray-600 hover:text-rose-500 transition-colors">聯繫我們</a>
             </div>
             
-            {/* 手機版選單按鈕 */}
-            <button 
-              className="md:hidden p-2 text-gray-600 hover:text-rose-500 transition-colors"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              <Menu className="w-6 h-6" />
-            </button>
+            {/* 手機版重要連結 + 選單按鈕 */}
+            <div className="md:hidden flex items-center space-x-4">
+              <a 
+                href="#testimonials" 
+                className="text-gray-600 hover:text-rose-500 transition-colors font-medium"
+              >
+                學員見證
+              </a>
+              <button 
+                className="p-2 text-gray-600 hover:text-rose-500 transition-colors"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              >
+                <Menu className="w-6 h-6" />
+              </button>
+            </div>
           </div>
           
           {/* 手機版下拉選單 */}
@@ -189,13 +197,6 @@ function App() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   理念
-                </a>
-                <a 
-                  href="#testimonials" 
-                  className="text-gray-600 hover:text-rose-500 transition-colors py-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  學員見證
                 </a>
                 <a 
                   href="#features" 

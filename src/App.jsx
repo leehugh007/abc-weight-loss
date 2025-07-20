@@ -1596,7 +1596,152 @@ function App() {
         </div>
       </section>
 
-      {/* 行動呼籲 */}
+      {/* 創辦者理念：為什麼堅持健康瘦身 */}
+      <section className="py-16 px-4 bg-gradient-to-b from-rose-50 to-blue-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              為什麼我堅持健康瘦身？
+            </h2>
+            <p className="text-xl text-rose-600 font-medium">
+              因為我看到了學員健康改變的感動
+            </p>
+          </div>
+
+          {/* 創辦者心聲 */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg mb-12">
+            <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+              <p className="text-lg mb-6">
+                在這個追求快速瘦身的時代，到處都是「一個月瘦10公斤」、「躺著就能瘦」的誘人廣告。
+              </p>
+              <p className="text-lg mb-6">
+                很多人問我：「為什麼你不跟上潮流？為什麼還要堅持這麼『慢』的方法？」
+              </p>
+              <p className="text-lg mb-6">
+                我的答案很簡單：<strong className="text-rose-600">因為我看到了真正健康改變的感動。</strong>
+              </p>
+              <p className="text-lg">
+                當我看到學員不只是瘦了，而是整個人生都被改變了，我就知道，這條路是對的。
+              </p>
+            </div>
+          </div>
+
+          {/* 學員故事 */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg mb-12">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+              讓我分享一個讓我深深感動的故事...
+            </h3>
+            
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* 左側：故事內容 */}
+              <div className="space-y-6">
+                <div className="bg-blue-50 p-6 rounded-lg">
+                  <h4 className="text-lg font-bold text-blue-600 mb-3">小美的困境（化名）</h4>
+                  <div className="space-y-3 text-gray-700">
+                    <p>她有自體免疫疾病，從年輕到現在嘗試無數次減肥都沒成功過。</p>
+                    <p>那時候的她，幾乎要放棄自己了。</p>
+                    <p className="italic text-blue-600">「我是不是永遠都好不了？」</p>
+                    <p>但是，當她聽了我們的說明會，相信這是一個健康的方式，決定給自己最後一次機會。</p>
+                  </div>
+                </div>
+
+                <div className="bg-green-50 p-6 rounded-lg">
+                  <h4 className="text-lg font-bold text-green-600 mb-3">一年後的奇蹟</h4>
+                  <div className="space-y-3 text-gray-700">
+                    <p><strong className="text-green-600">她瘦了20公斤。</strong></p>
+                    <p>但更令人開心的是...</p>
+                    <p>她的醫生告訴她：<strong>「血液檢查發炎指數有下降，可以先停藥，暫時不用再吃了。」</strong></p>
+                    <p className="text-sm text-gray-600">（要知道，她是領有重大傷病卡那種嚴重的程度）</p>
+                  </div>
+                </div>
+
+                <div className="bg-rose-50 p-6 rounded-lg">
+                  <h4 className="text-lg font-bold text-rose-600 mb-3">重獲新生</h4>
+                  <div className="space-y-3 text-gray-700">
+                    <p>「手指關節也不再腫脹疼痛了！」</p>
+                    <p>「我以前都只能趁沒發作時，手指正常趕快彈彈我喜歡的鋼琴，<strong className="text-rose-600">現在終於可以想彈就彈！</strong>」</p>
+                    <p>現在的她，可以開心地跟家人合照，能穿喜歡的洋裝。</p>
+                    <p className="font-semibold text-rose-600">「我相信我這次一定可以瘦一輩子，而且健康一輩子。」</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 右側：照片展示 */}
+              <div className="space-y-6">
+                <div className="text-center">
+                  <img 
+                    src="/autoimmune-student-after.jpeg" 
+                    alt="學員健康改善後的開心合照" 
+                    className="rounded-2xl shadow-lg w-full max-w-sm mx-auto"
+                  />
+                  <p className="text-sm text-gray-600 mt-2">開心地跟家人合照，穿著喜歡的洋裝</p>
+                </div>
+                
+                <div className="text-center">
+                  <img 
+                    src="/autoimmune-student-before.jpg" 
+                    alt="學員與家人的溫馨時光" 
+                    className="rounded-2xl shadow-lg w-full max-w-sm mx-auto"
+                  />
+                  <p className="text-sm text-gray-600 mt-2">現在可以盡情享受與家人的美好時光</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 創辦者感悟 */}
+          <div className="bg-gradient-to-r from-rose-100 to-blue-100 rounded-2xl p-8 mb-12">
+            <div className="text-center space-y-6">
+              <h3 className="text-2xl font-bold text-gray-800">這就是為什麼我堅持健康瘦身的原因</h3>
+              <div className="space-y-4 text-lg text-gray-700">
+                <p>不是因為我不懂行銷，不是因為我跟不上時代。</p>
+                <p>而是因為我知道，<strong className="text-rose-600">真正的改變，不只是體重數字的下降，而是整個人生的翻轉。</strong></p>
+                <p>當我看到小美從絕望到重燃希望，從痛苦到重獲自由，我就知道：</p>
+                <p className="text-2xl font-bold text-blue-600">這才是我想做的事情。</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 機會成本提醒 */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-rose-500">
+            <h3 className="text-xl font-bold text-gray-800 mb-6">也許你還在猶豫...</h3>
+            <div className="space-y-4 text-gray-700">
+              <p>也許你還在想：「我再自己試試看...」</p>
+              <p>也許你還在考慮：「要不要用那些快速的方法...」</p>
+              <div className="bg-rose-50 p-6 rounded-lg mt-6">
+                <p className="text-lg font-semibold text-rose-600 mb-4">但我想告訴你：</p>
+                <div className="space-y-2 text-gray-700">
+                  <p>⏰ <strong>每多等一個月，就是多一個月的不快樂。</strong></p>
+                  <p>💔 <strong>每多用一種傷身方法，身體就多受一次傷害。</strong></p>
+                  <p className="text-lg font-semibold text-blue-600 mt-4">時間和健康，都是最珍貴的成本。</p>
+                </div>
+              </div>
+              <p className="text-center text-lg font-medium text-gray-800 mt-6">
+                而那些已經開始的人，已經在享受健康改變的快樂了。
+              </p>
+            </div>
+          </div>
+
+          {/* 溫暖的行動呼籲 */}
+          <div className="text-center mt-12">
+            <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">如果小美的故事觸動了你...</h3>
+              <div className="space-y-3 text-lg text-gray-700 mb-8">
+                <p>如果你也想要的是健康的改變</p>
+                <p>如果你也相信身體健康比快速瘦身更重要</p>
+                <p className="font-semibold text-blue-600">那麼，是時候為自己做一個正確的決定了</p>
+              </div>
+              <div className="space-y-3 text-gray-700 mb-8">
+                <p>不要再讓自己受那些苦</p>
+                <p>不要再走那些彎路</p>
+                <p className="text-lg font-semibold text-rose-600">讓我們陪你走一條安全、健康、可持續的路</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 聯繫我們 */}
       <section id="contact" className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">

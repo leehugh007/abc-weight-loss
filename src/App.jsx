@@ -3,11 +3,14 @@ import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Heart, Users, Target, CheckCircle, Star, ArrowRight, Shield, Clock, Award, Wrench, Plus, Hammer, X, Utensils, PartyPopper, Frown, Plane, Menu } from 'lucide-react'
+import ArticlePage from './ArticlePage.jsx'
 import './App.css'
 
 function App() {
   const [activeTestimonial, setActiveTestimonial] = useState(0)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [currentView, setCurrentView] = useState('home')
+  const [currentArticle, setCurrentArticle] = useState(null)
 
   // 學員見證數據
   const testimonials = [
@@ -149,6 +152,17 @@ function App() {
       others: "單純體重下降"
     }
   ]
+
+  // 處理文章頁面顯示
+  const handleBackToHome = () => {
+    setCurrentView('home')
+    setCurrentArticle(null)
+  }
+
+  // 條件渲染：如果是文章頁面，顯示文章組件
+  if (currentView === 'article' && currentArticle) {
+    return <ArticlePage articleId={currentArticle} onBack={handleBackToHome} />
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
@@ -1854,7 +1868,10 @@ function App() {
                 <Button 
                   variant="outline" 
                   className="w-full border-red-200 text-red-600 hover:bg-red-50"
-                  onClick={() => window.open('/95-percent-rebound.pdf', '_blank')}
+                  onClick={() => {
+                    setCurrentArticle('rebound-analysis')
+                    setCurrentView('article')
+                  }}
                 >
                   閱讀完整分析
                   <ArrowRight className="ml-2 w-4 h-4" />
@@ -1888,7 +1905,10 @@ function App() {
                 <Button 
                   variant="outline" 
                   className="w-full border-orange-200 text-orange-600 hover:bg-orange-50"
-                  onClick={() => window.open('/ozempic-cost-analysis.pdf', '_blank')}
+                  onClick={() => {
+                    setCurrentArticle('ozempic-cost')
+                    setCurrentView('article')
+                  }}
                 >
                   了解真實成本
                   <ArrowRight className="ml-2 w-4 h-4" />
@@ -1922,7 +1942,10 @@ function App() {
                 <Button 
                   variant="outline" 
                   className="w-full border-purple-200 text-purple-600 hover:bg-purple-50"
-                  onClick={() => window.open('/body-wisdom-lost.pdf', '_blank')}
+                  onClick={() => {
+                    setCurrentArticle('body-wisdom')
+                    setCurrentView('article')
+                  }}
                 >
                   探索身體智慧
                   <ArrowRight className="ml-2 w-4 h-4" />
@@ -1956,7 +1979,10 @@ function App() {
                 <Button 
                   variant="outline" 
                   className="w-full border-green-200 text-green-600 hover:bg-green-50"
-                  onClick={() => window.open('/doctor-warning.pdf', '_blank')}
+                  onClick={() => {
+                    setCurrentArticle('doctor-warning')
+                    setCurrentView('article')
+                  }}
                 >
                   查看醫學警告
                   <ArrowRight className="ml-2 w-4 h-4" />

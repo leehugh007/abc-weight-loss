@@ -1670,20 +1670,19 @@ function App() {
               <div className="space-y-6">
                 <div className="text-center">
                   <img 
-                    src="/autoimmune-student-after.jpeg" 
-                    alt="學員健康改善後的開心合照" 
-                    className="rounded-2xl shadow-lg w-full max-w-sm mx-auto"
+                    src="/autoimmune-student-before-after.jpeg" 
+                    alt="自體免疫疾病學員Before&After對比：84kg到63.4kg的驚人轉變" 
+                    className="rounded-2xl shadow-lg w-full max-w-lg mx-auto"
                   />
-                  <p className="text-sm text-gray-600 mt-2">開心地跟家人合照，穿著喜歡的洋裝</p>
-                </div>
-                
-                <div className="text-center">
-                  <img 
-                    src="/autoimmune-student-before.jpg" 
-                    alt="學員與家人的溫馨時光" 
-                    className="rounded-2xl shadow-lg w-full max-w-sm mx-auto"
-                  />
-                  <p className="text-sm text-gray-600 mt-2">現在可以盡情享受與家人的美好時光</p>
+                  <div className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-green-50 rounded-lg">
+                    <p className="text-sm text-gray-700 font-medium">
+                      <span className="text-blue-600">Before:</span> 84kg，自體免疫疾病需要藥物控制<br/>
+                      <span className="text-green-600">After:</span> 63.4kg，發炎指數下降，醫生同意停藥
+                    </p>
+                    <p className="text-xs text-gray-500 mt-2">
+                      ✨ 體重-20.6kg ✨ 重大傷病卡到健康人生 ✨ 從絕望到希望
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

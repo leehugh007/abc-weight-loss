@@ -11,52 +11,64 @@ function ArticlePage({ articleId, onBack }) {
       title: '95%的人都會復胖，但這5%做對了什麼？',
       category: '復胖問題',
       readTime: '8分鐘閱讀',
-      content: `如果你正在讀這篇文章，我猜你可能正處在一個熟悉的循環中：減肥、復胖、再減肥、再復胖。也許這已經是你第三次、第五次，甚至第十次嘗試減肥了。
+      content: `如果你正在讀這篇文章，我猜你可能正處在一個熟悉的循環中：<span class="text-red-600 font-semibold">減肥、復胖、再減肥、再復胖</span>。也許這已經是你第三次、第五次，甚至第十次嘗試減肥了。
 
 你不是唯一一個。
 
-根據研究統計，95%的減肥者會在一年內復胖，其中三分之二的人甚至會比減肥前更重。這個數字聽起來殘酷，但它揭示了一個重要的真相：問題不在於你的意志力不夠強，而在於你用的方法根本就是錯的。
+根據研究統計，<span class="bg-red-100 text-red-700 px-2 py-1 rounded font-bold">95%的減肥者會在一年內復胖</span>，其中三分之二的人甚至會比減肥前更重。這個數字聽起來殘酷，但它揭示了一個重要的真相：<span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">問題不在於你的意志力不夠強，而在於你用的方法根本就是錯的</span>。
 
 ## 你是不是也有這些經歷？
 
-「我試過168斷食，剛開始瘦了5公斤，但後來忍不住大吃，結果反彈得更厲害。」
+<div class="bg-blue-50 border-l-4 border-blue-400 p-4 my-6">
+<p class="text-blue-800 italic">"我試過168斷食，剛開始瘦了5公斤，但後來忍不住大吃，結果反彈得更厲害。"</p>
+</div>
 
-「我辦了健身房會員，每天跑步一小時，累得半死，體重卻紋絲不動。」
+<div class="bg-purple-50 border-l-4 border-purple-400 p-4 my-6">
+<p class="text-purple-800 italic">"我辦了健身房會員，每天跑步一小時，累得半死，體重卻紋絲不動。"</p>
+</div>
 
-「我吃過代餐、喝過酵素、試過各種網紅減肥法，錢花了一大堆，體重還是在原地打轉。」
+<div class="bg-orange-50 border-l-4 border-orange-400 p-4 my-6">
+<p class="text-orange-800 italic">"我吃過代餐、喝過酵素、試過各種網紅減肥法，錢花了一大堆，體重還是在原地打轉。"</p>
+</div>
 
-如果這些話聽起來很熟悉，那麼你一定也體會過那種深深的挫敗感。每一次失敗，都像是在告訴你：「你就是做不到。」每一次復胖，都讓你對自己更加失望。
+如果這些話聽起來很熟悉，那麼你一定也體會過那種深深的挫敗感。每一次失敗，都像是在告訴你：「<span class="text-gray-600 line-through">你就是做不到</span>。」每一次復胖，都讓你對自己更加失望。
 
-我認識一位學員，她叫小雨（化名），今年41歲。她告訴我，她從國中開始減肥，到現在已經30年了。30年來，她試過市面上幾乎所有的減肥方法：節食、運動、代餐、減肥藥、甚至連偏方都試過。
+我認識一位學員，她叫小雨（化名），今年41歲。她告訴我，她從國中開始減肥，到現在已經<span class="bg-red-100 text-red-700 px-2 py-1 rounded font-bold">30年了</span>。30年來，她試過市面上幾乎所有的減肥方法：節食、運動、代餐、減肥藥、甚至連偏方都試過。
 
-「我自嘲自己最瘦的時候就是受精卵時期，」她苦笑著說，「這些方法理所當然的通通失敗了。」
+<div class="bg-gray-50 border-l-4 border-gray-400 p-4 my-6">
+<p class="text-gray-700 italic">"我自嘲自己最瘦的時候就是受精卵時期，這些方法理所當然的通通失敗了。"</p>
+</div>
 
-小雨的故事不是個案。在我們的學員中，有太多人都有著相似的經歷。他們不是不努力，不是不想改變，而是一直在用錯誤的方法對抗一個複雜的問題。
+小雨的故事不是個案。在我們的學員中，有太多人都有著相似的經歷。他們不是不努力，不是不想改變，而是<span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">一直在用錯誤的方法對抗一個複雜的問題</span>。
 
 ## 為什麼95%的人都會復胖？
 
-在深入探討那5%成功者的秘密之前，我們先來理解為什麼大多數人會陷入減肥復胖的惡性循環。
+在深入探討那<span class="bg-green-100 text-green-700 px-2 py-1 rounded font-bold">5%成功者</span>的秘密之前，我們先來理解為什麼大多數人會陷入減肥復胖的惡性循環。
 
 ### 第一個陷阱：把減肥當作短期任務
 
-大多數人把減肥當作一個有開始和結束的任務。「我要在三個月內瘦10公斤」、「夏天前要瘦到50公斤」...這種思維本身就註定了失敗。
+大多數人把減肥當作一個有開始和結束的任務。「<span class="text-red-600">我要在三個月內瘦10公斤</span>」、「<span class="text-red-600">夏天前要瘦到50公斤</span>」...這種思維本身就註定了失敗。
 
-當你把減肥當作短期任務時，你會採用極端的方法：嚴格節食、過度運動、完全戒掉某些食物。這些方法在短期內確實有效，但它們都有一個共同點：不可持續。
+當你把減肥當作短期任務時，你會採用極端的方法：<span class="text-orange-600 font-semibold">嚴格節食、過度運動、完全戒掉某些食物</span>。這些方法在短期內確實有效，但它們都有一個共同點：<span class="bg-red-100 text-red-700 px-2 py-1 rounded">不可持續</span>。
 
 ### 第二個陷阱：對抗身體的自然機制
 
-人體有一套精密的調節系統，當你突然大幅減少熱量攝取時，身體會啟動「飢荒模式」：
+人體有一套精密的調節系統，當你突然大幅減少熱量攝取時，身體會啟動「<span class="text-orange-600 font-bold">飢荒模式</span>」：
 
-- 基礎代謝率下降
-- 飢餓激素增加
-- 脂肪儲存能力增強
-- 肌肉量流失
+<div class="bg-orange-50 border-l-4 border-orange-400 p-4 my-6">
+<ul class="space-y-2">
+<li class="flex items-center"><span class="w-2 h-2 bg-orange-400 rounded-full mr-3"></span><span class="text-orange-800">基礎代謝率下降</span></li>
+<li class="flex items-center"><span class="w-2 h-2 bg-orange-400 rounded-full mr-3"></span><span class="text-orange-800">飢餓激素增加</span></li>
+<li class="flex items-center"><span class="w-2 h-2 bg-orange-400 rounded-full mr-3"></span><span class="text-orange-800">脂肪儲存能力增強</span></li>
+<li class="flex items-center"><span class="w-2 h-2 bg-orange-400 rounded-full mr-3"></span><span class="text-orange-800">肌肉量流失</span></li>
+</ul>
+</div>
 
-這就是為什麼節食減肥總是以復胖收場。你不是在和脂肪戰鬥，你是在和幾百萬年演化出來的生存機制戰鬥。
+<span class="bg-red-100 text-red-700 px-2 py-1 rounded font-semibold">這就是為什麼節食減肥總是以復胖收場</span>。你不是在和脂肪戰鬥，你是在和幾百萬年演化出來的生存機制戰鬥。
 
 ### 第三個陷阱：忽視心理和情緒因素
 
-很多人以為減肥只是「少吃多動」這麼簡單，但實際上，我們的飲食行為深受情緒、壓力、習慣和環境影響。
+很多人以為減肥只是「<span class="text-gray-600 line-through">少吃多動</span>」這麼簡單，但實際上，我們的飲食行為深受情緒、壓力、習慣和環境影響。
 
 如果你不處理這些根本原因，即使暫時瘦下來，也會在壓力來臨時重新回到舊的飲食模式。
 
@@ -550,8 +562,12 @@ Dr. Crystal Wyllie醫生發出緊急警告：「許多患者在飢餓信號改�
     )
   }
 
+  const renderArticleContent = (content) => {
+    return <div dangerouslySetInnerHTML={{ __html: content }} />
+  }
+
   const handleContactUs = () => {
-    window.open('https://line.me/ti/p/@abc-weightloss', '_blank')
+    window.open('https://lin.ee/ApHSqCU', '_blank')
   }
 
   return (
@@ -592,38 +608,7 @@ Dr. Crystal Wyllie醫生發出緊急警告：「許多患者在飢餓信號改�
           {/* Article Body */}
           <div className="p-8">
             <div className="prose prose-lg max-w-none">
-              {article.content.split('\n\n').map((paragraph, index) => {
-                if (paragraph.startsWith('## ')) {
-                  return (
-                    <h2 key={index} className="text-2xl font-bold text-gray-800 mt-8 mb-4">
-                      {paragraph.replace('## ', '')}
-                    </h2>
-                  )
-                } else if (paragraph.startsWith('### ')) {
-                  return (
-                    <h3 key={index} className="text-xl font-semibold text-gray-700 mt-6 mb-3">
-                      {paragraph.replace('### ', '')}
-                    </h3>
-                  )
-                } else if (paragraph.startsWith('- ')) {
-                  const listItems = paragraph.split('\n').filter(item => item.startsWith('- '))
-                  return (
-                    <ul key={index} className="list-disc list-inside space-y-2 my-4">
-                      {listItems.map((item, itemIndex) => (
-                        <li key={itemIndex} className="text-gray-700">
-                          {item.replace('- ', '')}
-                        </li>
-                      ))}
-                    </ul>
-                  )
-                } else {
-                  return (
-                    <p key={index} className="text-gray-700 leading-relaxed mb-4">
-                      {paragraph}
-                    </p>
-                  )
-                }
-              })}
+              {renderArticleContent(article.content)}
             </div>
           </div>
 

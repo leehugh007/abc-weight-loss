@@ -1811,6 +1811,192 @@ function App() {
         </div>
       </section>
 
+      {/* 為什麼我們不推薦瘦瘦針？專業觀點區塊 */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-blue-100 text-blue-700 hover:bg-blue-200">
+              專業觀點
+            </Badge>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              為什麼在瘦瘦針如此流行的時代，我們依然堅持健康瘦身？
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              這不是攻擊，而是專業分析。我們整理了深度研究，幫助您做出最適合的選擇。
+            </p>
+          </div>
+
+          {/* 文章卡片網格 */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* 文章1：復胖問題 */}
+            <Card className="hover:shadow-xl transition-all duration-300 bg-white border-l-4 border-l-red-400">
+              <CardHeader className="pb-4">
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <Badge className="mb-3 bg-red-100 text-red-700">復胖風險</Badge>
+                    <CardTitle className="text-xl text-gray-800 leading-tight mb-2">
+                      95%的人都會復胖，但這5%做對了什麼？
+                    </CardTitle>
+                  </div>
+                  <div className="text-3xl ml-4">📊</div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  深度分析為什麼大多數減肥方法都會失敗，以及那5%成功者的真正秘密。
+                  了解減肥復胖的根本原因，避免重蹈覆轍。
+                </p>
+                <div className="space-y-2 text-sm text-gray-500 mb-4">
+                  <p>• 揭露95%復胖的真相</p>
+                  <p>• 分析極端方法的陷阱</p>
+                  <p>• 成功者的系統性方法</p>
+                </div>
+                <Button 
+                  variant="outline" 
+                  className="w-full border-red-200 text-red-600 hover:bg-red-50"
+                  onClick={() => window.open('/95-percent-rebound.pdf', '_blank')}
+                >
+                  閱讀完整分析
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* 文章2：經濟成本 */}
+            <Card className="hover:shadow-xl transition-all duration-300 bg-white border-l-4 border-l-orange-400">
+              <CardHeader className="pb-4">
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <Badge className="mb-3 bg-orange-100 text-orange-700">經濟考量</Badge>
+                    <CardTitle className="text-xl text-gray-800 leading-tight mb-2">
+                      花10萬打瘦瘦針，停藥後復胖...這真的是你要的瘦嗎？
+                    </CardTitle>
+                  </div>
+                  <div className="text-3xl ml-4">💰</div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  真實案例分享：10萬元的投資，換來的是更嚴重的復胖和心理依賴。
+                  深入探討瘦瘦針的隱藏成本。
+                </p>
+                <div className="space-y-2 text-sm text-gray-500 mb-4">
+                  <p>• 每月1萬6的經濟壓力</p>
+                  <p>• 停藥後更嚴重復胖</p>
+                  <p>• 心理依賴的風險</p>
+                </div>
+                <Button 
+                  variant="outline" 
+                  className="w-full border-orange-200 text-orange-600 hover:bg-orange-50"
+                  onClick={() => window.open('/ozempic-cost-analysis.pdf', '_blank')}
+                >
+                  了解真實成本
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* 文章3：身體認知 */}
+            <Card className="hover:shadow-xl transition-all duration-300 bg-white border-l-4 border-l-purple-400">
+              <CardHeader className="pb-4">
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <Badge className="mb-3 bg-purple-100 text-purple-700">身體智慧</Badge>
+                    <CardTitle className="text-xl text-gray-800 leading-tight mb-2">
+                      瘦瘦針讓你瘦了，但你的身體還認識你嗎？
+                    </CardTitle>
+                  </div>
+                  <div className="text-3xl ml-4">🧠</div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  當身體被藥物強迫改變時，你失去的不只是體重，還有身體的自然智慧。
+                  對比自然瘦身與強迫瘦身的差異。
+                </p>
+                <div className="space-y-2 text-sm text-gray-500 mb-4">
+                  <p>• 失去飢餓感的困擾</p>
+                  <p>• 身體認知混亂問題</p>
+                  <p>• 自然vs強迫的對比</p>
+                </div>
+                <Button 
+                  variant="outline" 
+                  className="w-full border-purple-200 text-purple-600 hover:bg-purple-50"
+                  onClick={() => window.open('/body-wisdom-lost.pdf', '_blank')}
+                >
+                  探索身體智慧
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* 文章4：健康風險 */}
+            <Card className="hover:shadow-xl transition-all duration-300 bg-white border-l-4 border-l-green-400">
+              <CardHeader className="pb-4">
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <Badge className="mb-3 bg-green-100 text-green-700">醫學警告</Badge>
+                    <CardTitle className="text-xl text-gray-800 leading-tight mb-2">
+                      醫生緊急警告：瘦瘦針讓你失去了什麼？
+                    </CardTitle>
+                  </div>
+                  <div className="text-3xl ml-4">⚕️</div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  英國最新研究震驚醫學界：37%使用者擔心營養不足，52%經常跳餐。
+                  醫生發出的緊急健康警告。
+                </p>
+                <div className="space-y-2 text-sm text-gray-500 mb-4">
+                  <p>• 營養不足的風險</p>
+                  <p>• 消化系統副作用</p>
+                  <p>• 醫學界的警告</p>
+                </div>
+                <Button 
+                  variant="outline" 
+                  className="w-full border-green-200 text-green-600 hover:bg-green-50"
+                  onClick={() => window.open('/doctor-warning.pdf', '_blank')}
+                >
+                  查看醫學警告
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* 總結區塊 */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                我們的立場：理性選擇，健康第一
+              </h3>
+              <p className="text-lg text-gray-700 mb-6 max-w-4xl mx-auto leading-relaxed">
+                我們不是反對所有的醫學治療，而是希望每個人都能充分了解各種方法的優缺點，
+                做出最適合自己的理性選擇。健康瘦身不只是體重的改變，更是生活品質的全面提升。
+              </p>
+              <div className="grid md:grid-cols-3 gap-6 text-center">
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <Shield className="w-8 h-8 text-blue-600 mx-auto mb-2" />
+                  <h4 className="font-bold text-blue-700 mb-2">安全第一</h4>
+                  <p className="text-sm text-gray-600">不傷身體的健康方法，長期可持續</p>
+                </div>
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <Heart className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                  <h4 className="font-bold text-green-700 mb-2">全人關懷</h4>
+                  <p className="text-sm text-gray-600">不只瘦身，更關注整體健康與生活品質</p>
+                </div>
+                <div className="bg-purple-50 p-4 rounded-lg">
+                  <Target className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+                  <h4 className="font-bold text-purple-700 mb-2">長期成功</h4>
+                  <p className="text-sm text-gray-600">建立可持續的生活方式，瘦一輩子</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 頁腳 */}
       <footer className="bg-gray-800 text-white py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">

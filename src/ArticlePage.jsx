@@ -563,7 +563,53 @@ Dr. Crystal Wyllie醫生發出緊急警告：「許多患者在飢餓信號改�
   }
 
   const renderArticleContent = (content) => {
-    return <div dangerouslySetInnerHTML={{ __html: content }} />
+    // 將HTML內容轉換為JSX組件
+    const processContent = (htmlContent) => {
+      // 分割內容為段落
+      const paragraphs = htmlContent.split('\n\n').filter(p => p.trim())
+      
+      return paragraphs.map((paragraph, index) => {
+        // 處理標題
+        if (paragraph.startsWith('## ')) {
+          return (
+            <h2 key={index} className="text-2xl font-bold text-gray-800 mb-6 mt-8">
+              {paragraph.replace('## ', '')}
+            </h2>
+          )
+        }
+        
+        if (paragraph.startsWith('### ')) {
+          return (
+            <h3 key={index} className="text-xl font-semibold text-gray-800 mb-4 mt-6">
+              {paragraph.replace('### ', '')}
+            </h3>
+          )
+        }
+        
+        // 處理帶有HTML標籤的段落
+        if (paragraph.includes('<span class=')) {
+          return (
+            <div key={index} className="mb-6" dangerouslySetInnerHTML={{ __html: paragraph }} />
+          )
+        }
+        
+        // 處理引用框
+        if (paragraph.includes('<div class="bg-')) {
+          return (
+            <div key={index} className="mb-6" dangerouslySetInnerHTML={{ __html: paragraph }} />
+          )
+        }
+        
+        // 處理普通段落
+        return (
+          <p key={index} className="text-gray-700 leading-relaxed mb-6 text-lg">
+            {paragraph}
+          </p>
+        )
+      })
+    }
+    
+    return <div className="space-y-4">{processContent(content)}</div>
   }
 
   const handleContactUs = () => {

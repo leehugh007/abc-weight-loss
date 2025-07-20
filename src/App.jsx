@@ -15,41 +15,40 @@ function App() {
       name: "小雨",
       age: 41,
       background: "30年減肥史",
-      quote: "我自嘲自己最瘦的時候就是受精卵時期，這些方法理所當然的通通失敗了。",
-      result: "終於找到可持續的方法",
+      quote: "我試過減肥藥、極端節食，身體都出問題了。ABC瘦身法讓我第一次感受到健康瘦身的可能。",
+      result: "終於找到不傷身體的可持續方法",
       type: "反覆減肥失敗型"
     },
     {
       name: "小慧",
       age: 41,
       background: "三期學員班長",
-      quote: "我們要的是瘦一輩子，而不是瘦一陣子。第一次覺得減重居然可以開心地進行。",
-      result: "從恐懼運動到熱愛運動",
+      quote: "以前為了快速瘦身，什麼極端方法都試過。現在我要的是瘦一輩子，而不是瘦一陣子。",
+      result: "從恐懼運動到熱愛運動，身體更健康",
       type: "長期成功見證型"
     },
     {
       name: "小維",
       age: 35,
       background: "上班族",
-      quote: "我現在很少胃酸逆流了，睡眠品質也變好了，整個人的精神狀態都不一樣了。",
-      result: "胃食道逆流大幅改善",
+      quote: "減肥藥讓我胃酸逆流更嚴重，ABC瘦身法不但讓我瘦了，胃食道逆流也大幅改善了。",
+      result: "胃食道逆流大幅改善，睡眠品質變好",
       type: "健康改善型"
     },
     {
       name: "小魚",
       age: 31,
       background: "護理師",
-      quote: "我每天照顧病人，卻連自己的健康都顧不好。夜班結束後，我就想大吃一頓。",
+      quote: "我每天照顧病人，卻連自己的健康都顧不好。終於找到適合醫護人員的健康方法。",
       result: "學會在不規律作息中維持健康",
       type: "職場壓力型"
     },
-
     {
       name: "Sam",
       age: 44,
       background: "工程師",
-      quote: "我不能倒下，家人還需要我。我必須為家人的未來負責。",
-      result: "三高指標明顯改善",
+      quote: "體檢報告滿江紅，我害怕瘦瘦針的副作用。ABC瘦身法讓我安全地改善了健康指標。",
+      result: "三高指標明顯改善，不再擔心副作用",
       type: "中年健康危機型"
     }
   ]
@@ -226,19 +225,22 @@ function App() {
               創辦者故事
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
-              從胖子到幫助<span className="text-rose-500">3000+人</span>成功減重
+              從胖子到幫助<span className="text-rose-500">3000+人</span><span className="text-green-600">健康瘦身</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8">
-              愛情的力量，讓我找到<span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent font-bold">人生最後一次減重</span>的秘密
+              愛情的力量，讓我找到<span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent font-bold">不傷身體、人生最後一次減重</span>的秘密
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <span className="bg-gradient-to-r from-rose-100 to-pink-100 text-rose-700 px-4 py-2 rounded-full font-semibold">
                 🍽️ 吃飽也能瘦
               </span>
+              <span className="bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 px-4 py-2 rounded-full font-semibold">
+                💚 不傷身體的健康方法
+              </span>
               <span className="bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-700 px-4 py-2 rounded-full font-semibold">
                 ⏰ 瘦一輩子而不只是瘦一陣子
               </span>
-              <span className="bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 px-4 py-2 rounded-full font-semibold">
+              <span className="bg-gradient-to-r from-purple-100 to-violet-100 text-purple-700 px-4 py-2 rounded-full font-semibold">
                 🎯 最後一次瘦身
               </span>
             </div>
@@ -256,8 +258,8 @@ function App() {
                   </p>
                   <p>
                     <strong className="text-blue-600">痛苦的循環：</strong>
-                    我曾經用過無數方法減肥，市售減重產品、針灸、三餐蘋果、激烈斷食，
-                    但錯誤的方式讓我反覆失敗，體重甚至變得更重！
+                    我曾經用過無數方法減肥，市售減重產品讓我心悸失眠、針灸讓我身體虛弱、三餐蘋果讓我營養不良、激烈斷食讓我代謝更差，
+                    這些錯誤的方式不但讓我反覆失敗，身體也受到很大傷害，體重甚至變得更重！
                   </p>
                   <p>
                     <strong className="text-green-600">轉折點：</strong>
@@ -271,13 +273,20 @@ function App() {
               </div>
 
               <div className="bg-gradient-to-r from-rose-50 to-blue-50 rounded-2xl p-6 border border-rose-200">
-                <h4 className="text-lg font-bold text-gray-800 mb-3">我的使命</h4>
-                <p className="text-gray-700 leading-relaxed">
-                  從此之後，我真心希望將這些心路歷程和方法分享給大家！
-                  經過多年研究，我找到有效長久維持的關鍵，
-                  已成功幫助 <span className="font-bold text-rose-600">3,000+學員</span> 達成
-                  <span className="font-bold text-blue-600"> #人生最後一次減重</span>
-                </p>
+                <h4 className="text-lg font-bold text-gray-800 mb-3">我的健康使命</h4>
+                <div className="space-y-3 text-gray-700 leading-relaxed">
+                  <p>
+                    <strong className="text-rose-600">我創立ABC瘦身法，就是不想讓你們再走我走過的那些彎路。</strong>
+                    20年的摸索，3000+人的驗證，就是為了讓你少走彎路，直接成功。
+                  </p>
+                  <p>
+                    我最不忍心看到的，就是有人還在用我20年前的錯誤方法折磨自己。
+                    我把所有的經驗都整理好了，就是希望你們不要再受那些苦。
+                  </p>
+                  <p className="font-semibold text-blue-600">
+                    💚 我承諾：絕不讓你走我走過的彎路，如果我的方法不適合你，我會誠實告訴你。
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -321,6 +330,87 @@ function App() {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 過來人共鳴區塊 */}
+      <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-800 mb-6">
+              如果你也曾經...
+            </h2>
+            <p className="text-xl text-gray-600 mb-8">
+              你並不孤單，我們的學員也都有過同樣的經歷
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <Card className="bg-white/80 backdrop-blur-sm shadow-lg border-l-4 border-l-red-400 hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="text-3xl mb-3">💊</div>
+                <h3 className="font-bold text-gray-800 mb-2">試過減肥藥</h3>
+                <p className="text-gray-600 text-sm">心悸、失眠、腸胃不適...身體承受了太多痛苦</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white/80 backdrop-blur-sm shadow-lg border-l-4 border-l-orange-400 hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="text-3xl mb-3">🍎</div>
+                <h3 className="font-bold text-gray-800 mb-2">極端節食</h3>
+                <p className="text-gray-600 text-sm">三餐蘋果、激烈斷食...結果越減越重，身體更虛弱</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white/80 backdrop-blur-sm shadow-lg border-l-4 border-l-yellow-400 hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="text-3xl mb-3">😰</div>
+                <h3 className="font-bold text-gray-800 mb-2">害怕副作用</h3>
+                <p className="text-gray-600 text-sm">瘦瘦針太貴又怕副作用，想找安全有效的方法</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white/80 backdrop-blur-sm shadow-lg border-l-4 border-l-green-400 hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="text-3xl mb-3">🔄</div>
+                <h3 className="font-bold text-gray-800 mb-2">反覆失敗</h3>
+                <p className="text-gray-600 text-sm">試過無數方法都失敗，開始懷疑自己是不是沒救了</p>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100 max-w-4xl mx-auto">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                💚 我們承諾：這次不一樣
+              </h3>
+              <div className="grid md:grid-cols-2 gap-6 text-left">
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span className="text-gray-700">不使用任何可能傷身的方法</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span className="text-gray-700">營養師全程把關，確保健康</span>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span className="text-gray-700">溫和漸進，讓身體自然適應</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span className="text-gray-700">教你正確方法，終身受用</span>
+                  </div>
+                </div>
+              </div>
+              <p className="text-lg text-gray-600 mt-6 italic">
+                "即使失敗過10次，這次也能成功 - 因為方法對了"
+              </p>
             </div>
           </div>
         </div>
@@ -1267,10 +1357,13 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              真實學員的轉變故事
+              從不健康到健康的真實轉變
             </h2>
-            <p className="text-xl text-gray-600">
-              他們的故事，也許就是你的未來
+            <p className="text-xl text-gray-600 mb-4">
+              他們也曾經用過極端方法，現在終於找到安全有效的路
+            </p>
+            <p className="text-lg text-green-600 font-medium">
+              💚 不只是瘦了，身體更健康了
             </p>
           </div>
           

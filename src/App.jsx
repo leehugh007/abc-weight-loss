@@ -246,10 +246,11 @@ function App() {
             </div>
             
             {/* 桌面版導航 */}
-            <div className="hidden md:flex space-x-6">
+            <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-600 hover:text-rose-500 transition-colors">理念</a>
               <a href="#single-mom-story" className="text-gray-600 hover:text-rose-500 transition-colors">學員見證</a>
               <a href="#features" className="text-gray-600 hover:text-rose-500 transition-colors">課程特色</a>
+              <a href="#專業觀點" className="text-gray-600 hover:text-rose-500 transition-colors">專業觀點</a>
               <a href="#contact" className="text-gray-600 hover:text-rose-500 transition-colors">聯繫我們</a>
             </div>
             
@@ -294,6 +295,13 @@ function App() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   課程特色
+                </a>
+                <a 
+                  href="#專業觀點" 
+                  className="text-gray-600 hover:text-rose-500 transition-colors py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  專業觀點
                 </a>
                 <a 
                   href="#contact" 

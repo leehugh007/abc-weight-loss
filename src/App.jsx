@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
@@ -11,6 +11,54 @@ function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [currentView, setCurrentView] = useState('home')
   const [currentArticle, setCurrentArticle] = useState(null)
+
+  // 初始化時檢查URL
+  useEffect(() => {
+    const path = window.location.pathname
+    const hash = window.location.hash
+    
+    if (path.startsWith('/article/')) {
+      const articleId = path.replace('/article/', '')
+      setCurrentView('article')
+      setCurrentArticle(articleId)
+    } else if (hash) {
+      // 處理錨點連結
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1))
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 100)
+    }
+  }, [])
+
+  // 監聽瀏覽器返回按鈕
+  useEffect(() => {
+    const handlePopState = (event) => {
+      const path = window.location.pathname
+      
+      if (path === '/' || path === '') {
+        setCurrentView('home')
+        setCurrentArticle(null)
+        // 如果有狀態信息，跳轉到指定區塊
+        if (event.state && event.state.scrollTo) {
+          setTimeout(() => {
+            const element = document.getElementById(event.state.scrollTo)
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' })
+            }
+          }, 100)
+        }
+      } else if (path.startsWith('/article/')) {
+        const articleId = path.replace('/article/', '')
+        setCurrentView('article')
+        setCurrentArticle(articleId)
+      }
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [])
 
   // 學員見證數據
   const testimonials = [
@@ -157,6 +205,27 @@ function App() {
   const handleBackToHome = () => {
     setCurrentView('home')
     setCurrentArticle(null)
+    // 使用瀏覽器歷史API，並設置狀態信息
+    window.history.pushState(
+      { scrollTo: 'ozempic-insights' }, 
+      '', 
+      '/'
+    )
+    // 延遲一點時間確保頁面已經渲染，然後跳轉到文章區塊
+    setTimeout(() => {
+      const element = document.getElementById('ozempic-insights')
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }, 100)
+  }
+
+  // 處理文章按鈕點擊
+  const handleArticleClick = (articleId) => {
+    setCurrentView('article')
+    setCurrentArticle(articleId)
+    // 更新URL，讓瀏覽器歷史記錄正確
+    window.history.pushState(null, '', `/article/${articleId}`)
   }
 
   // 條件渲染：如果是文章頁面，顯示文章組件
@@ -178,7 +247,7 @@ function App() {
             {/* 桌面版導航 */}
             <div className="hidden md:flex space-x-6">
               <a href="#about" className="text-gray-600 hover:text-rose-500 transition-colors">理念</a>
-              <a href="#testimonials" className="text-gray-600 hover:text-rose-500 transition-colors">學員見證</a>
+              <a href="#single-mom-story" className="text-gray-600 hover:text-rose-500 transition-colors">學員見證</a>
               <a href="#features" className="text-gray-600 hover:text-rose-500 transition-colors">課程特色</a>
               <a href="#contact" className="text-gray-600 hover:text-rose-500 transition-colors">聯繫我們</a>
             </div>
@@ -210,6 +279,13 @@ function App() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   理念
+                </a>
+                <a 
+                  href="#single-mom-story" 
+                  className="text-gray-600 hover:text-rose-500 transition-colors py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  學員見證
                 </a>
                 <a 
                   href="#features" 
@@ -1650,7 +1726,7 @@ function App() {
               {/* 左側：故事內容 */}
               <div className="space-y-6">
                 <div className="bg-blue-50 p-6 rounded-lg">
-                  <h4 className="text-lg font-bold text-blue-600 mb-3">小美的困境（化名）</h4>
+                  <h4 className="text-lg font-bold text-blue-600 mb-3">慧敏的困境</h4>
                   <div className="space-y-3 text-gray-700">
                     <p>她有自體免疫疾病，從年輕到現在嘗試無數次減肥都沒成功過。</p>
                     <p>那時候的她，幾乎要放棄自己了。</p>
@@ -1826,7 +1902,7 @@ function App() {
       </section>
 
       {/* 為什麼我們不推薦瘦瘦針？專業觀點區塊 */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+      <section id="ozempic-insights" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-blue-100 text-blue-700 hover:bg-blue-200">
@@ -1868,10 +1944,7 @@ function App() {
                 <Button 
                   variant="outline" 
                   className="w-full border-red-200 text-red-600 hover:bg-red-50"
-                  onClick={() => {
-                    setCurrentArticle('rebound-analysis')
-                    setCurrentView('article')
-                  }}
+                  onClick={() => handleArticleClick('rebound-analysis')}
                 >
                   閱讀完整分析
                   <ArrowRight className="ml-2 w-4 h-4" />
@@ -1905,10 +1978,7 @@ function App() {
                 <Button 
                   variant="outline" 
                   className="w-full border-orange-200 text-orange-600 hover:bg-orange-50"
-                  onClick={() => {
-                    setCurrentArticle('ozempic-cost')
-                    setCurrentView('article')
-                  }}
+                  onClick={() => handleArticleClick('ozempic-cost')}
                 >
                   了解真實成本
                   <ArrowRight className="ml-2 w-4 h-4" />
@@ -1942,10 +2012,7 @@ function App() {
                 <Button 
                   variant="outline" 
                   className="w-full border-purple-200 text-purple-600 hover:bg-purple-50"
-                  onClick={() => {
-                    setCurrentArticle('body-wisdom')
-                    setCurrentView('article')
-                  }}
+                  onClick={() => handleArticleClick('body-wisdom')}
                 >
                   探索身體智慧
                   <ArrowRight className="ml-2 w-4 h-4" />
@@ -1979,10 +2046,7 @@ function App() {
                 <Button 
                   variant="outline" 
                   className="w-full border-green-200 text-green-600 hover:bg-green-50"
-                  onClick={() => {
-                    setCurrentArticle('doctor-warning')
-                    setCurrentView('article')
-                  }}
+                  onClick={() => handleArticleClick('doctor-warning')}
                 >
                   查看醫學警告
                   <ArrowRight className="ml-2 w-4 h-4" />

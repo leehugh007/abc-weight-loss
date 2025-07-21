@@ -158,49 +158,55 @@ ABC瘦身法正是基於這些成功者的經驗而設計的。我們不追求�
       readTime: '6分鐘閱讀',
       content: `昨天在社群上看到一位媽媽的無奈分享，讓我心情很沉重。
 
-她說：「花了10萬打瘦瘦針，3個月瘦了8公斤，當時覺得終於找到救星了。但停藥半年後，體重不只全部回來，還多了2公斤...現在看著鏡子裡的自己，覺得比以前更胖、更絕望。最可怕的是，我發現自己已經離不開這個藥了，一想到要停藥就恐慌。」
+她說：「<span style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">花了10萬打瘦瘦針，3個月瘦了8公斤</span>，當時覺得終於找到救星了。但<span style="color: #f44336; font-weight: bold;">停藥半年後，體重不只全部回來，還多了2公斤</span>...現在看著鏡子裡的自己，覺得比以前更胖、更絕望。最可怕的是，我發現自己已經<span style="background-color: #ff9800; color: white; padding: 2px 4px; border-radius: 3px;">離不開這個藥了，一想到要停藥就恐慌</span>。」
 
-這讓我想問：這真的是你要的瘦嗎？
+這讓我想問：<span style="color: #f44336; font-weight: bold; font-size: 1.1em;">這真的是你要的瘦嗎？</span>
 
-如果瘦身的代價是停藥後更嚴重的復胖、每個月1萬6的經濟壓力、還有對藥物的心理依賴...這樣的瘦，真的值得嗎？
+如果瘦身的代價是<span style="color: #f44336;">停藥後更嚴重的復胖</span>、<span style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">每個月1萬6的經濟壓力</span>、還有<span style="background-color: #ff9800; color: white; padding: 2px 4px; border-radius: 3px;">對藥物的心理依賴</span>...這樣的瘦，真的值得嗎？
 
 ## 我理解你的選擇
 
 我知道，選擇瘦瘦針的你，一定經歷過太多次的減肥失敗。
 
-也許你是那個已經節制飲食卻依然瘦不下來的人。就像我們的學員雅文曾經說過：「以前我覺得自己已經吃的很節制，最愛喝的珍奶一個月只限制自己喝1杯...但是但是！這樣體重也沒變瘦！」你是不是也有同樣的困惑？明明已經很努力控制了，為什麼體重就是不動？
+也許你是那個已經節制飲食卻依然瘦不下來的人。就像我們的學員雅文曾經說過：
 
-也許你是那個工作壓力大、生活忙碌的職場人，每天被工作追著跑，根本沒時間好好照顧自己。看到瘦瘦針的廣告，心想：「終於有一個不用改變生活方式就能瘦的方法了！」
+<div style="border-left: 4px solid #2196f3; background-color: #e3f2fd; padding: 12px; margin: 16px 0; border-radius: 4px;">
+「以前我覺得自己已經吃的很節制，最愛喝的珍奶一個月只限制自己喝1杯...但是但是！這樣體重也沒變瘦！」
+</div>
 
-也許你是那個已經嘗試過無數次減肥的「資深減肥者」，從斷食到代餐，從生酮到運動，每一種方法都試過，卻總是在復胖的循環中打轉。當聽到瘦瘦針時，你想：「這次一定要成功！」
+你是不是也有同樣的困惑？<span style="color: #f44336; font-weight: bold;">明明已經很努力控制了，為什麼體重就是不動？</span>
+
+也許你是那個工作壓力大、生活忙碌的職場人，每天被工作追著跑，根本沒時間好好照顧自己。看到瘦瘦針的廣告，心想：<span style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">「終於有一個不用改變生活方式就能瘦的方法了！」</span>
+
+也許你是那個已經嘗試過無數次減肥的「資深減肥者」，從斷食到代餐，從生酮到運動，每一種方法都試過，卻總是在復胖的循環中打轉。當聽到瘦瘦針時，你想：<span style="color: #f44336; font-weight: bold;">「這次一定要成功！」</span>
 
 我完全理解這種心情。當你已經嘗試過所有方法都失敗時，瘦瘦針看起來就像是最後的救命稻草。
 
-但是，親愛的，我必須告訴你一個殘酷的真相：依賴外物的瘦身，永遠不會是真正的解決方案。
+但是，親愛的，我必須告訴你一個殘酷的真相：<span style="background-color: #ff9800; color: white; padding: 2px 4px; border-radius: 3px;">依賴外物的瘦身，永遠不會是真正的解決方案。</span>
 
 ## 真正的瘦身智慧
 
-真正的瘦身，不是靠外力強迫身體改變，而是喚醒身體本來就有的智慧。
+真正的瘦身，不是靠外力強迫身體改變，而是<span style="background-color: #4caf50; color: white; padding: 2px 4px; border-radius: 3px;">喚醒身體本來就有的智慧</span>。
 
 什麼是身體的智慧？就是當你的身體營養充足、代謝正常時，它會自然地告訴你什麼該吃、什麼不該吃、什麼時候該停止進食。
 
 這就是ABC瘦身法和瘦瘦針最大的差別：
 
-### 瘦瘦針是「強迫身體不想吃」
+### <span style="color: #f44336;">瘦瘦針是「強迫身體不想吃」</span>
 - 透過藥物抑制食慾中樞
 - 身體被迫減少進食量
-- 停藥後身體反彈更嚴重
+- <span style="color: #f44336; font-weight: bold;">停藥後身體反彈更嚴重</span>
 - 沒有學會正確的飲食方式
 
-### ABC瘦身法是「讓身體自然不想吃不健康的食物」
+### <span style="color: #4caf50;">ABC瘦身法是「讓身體自然不想吃不健康的食物」</span>
 - 透過正確營養讓身體滿足
 - 身體自然選擇健康食物
-- 建立可持續一輩子的習慣
+- <span style="background-color: #4caf50; color: white; padding: 2px 4px; border-radius: 3px;">建立可持續一輩子的習慣</span>
 - 學會傾聽身體的聲音
 
 這不是理論，而是我們無數學員親身驗證的真實經驗。
 
-當你開始傾聽身體的聲音，做對身體最好的選擇時，你會發現一個神奇的現象：你不再需要用意志力對抗食慾，因為你的身體會自然地引導你做出正確的選擇。
+當你開始傾聽身體的聲音，做對身體最好的選擇時，你會發現一個神奇的現象：<span style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">你不再需要用意志力對抗食慾，因為你的身體會自然地引導你做出正確的選擇。</span>
 
 ## 真實案例分享
 
@@ -208,33 +214,39 @@ ABC瘦身法正是基於這些成功者的經驗而設計的。我們不追求�
 
 雅文跟著我們調整飲食後發現：
 
-「跟著營養師調整飲食以後，早餐可以吃我喜歡的吐司、飯糰，也試著學習吃好的澱粉。」她從節制飲食到建立生活方式的轉變，讓她終於擺脫了反覆減肥失敗的痛苦。
+<div style="border-left: 4px solid #4caf50; background-color: #e8f5e8; padding: 12px; margin: 16px 0; border-radius: 4px;">
+「跟著營養師調整飲食以後，早餐可以吃我喜歡的吐司、飯糰，也試著學習吃好的澱粉。」
+</div>
+
+她從節制飲食到建立生活方式的轉變，讓她終於擺脫了反覆減肥失敗的痛苦。
 
 另一位學員小美分享：
 
+<div style="border-left: 4px solid #9c27b0; background-color: #f3e5f5; padding: 12px; margin: 16px 0; border-radius: 4px;">
 「以前我總是在節食和暴食之間擺盪，現在我學會了傾聽身體的需求。當我給身體足夠的營養時，我發現自己自然就不會想吃垃圾食物了。」
+</div>
 
 ## 瘦瘦針的隱藏成本
 
 讓我們來算一筆帳。瘦瘦針的成本不只是金錢：
 
-### 經濟成本
-- 每月1萬6的藥費
-- 一年就是19萬2千元
+### <span style="color: #ff9800; font-weight: bold;">經濟成本</span>
+- <span style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">每月1萬6的藥費</span>
+- <span style="color: #f44336; font-weight: bold;">一年就是19萬2千元</span>
 - 停藥復胖後需要重新開始
 - 心理依賴導致的長期費用
 
-### 健康成本
+### <span style="color: #f44336; font-weight: bold;">健康成本</span>
 - 營養不足的風險
 - 消化系統副作用
-- 心理依賴問題
-- 停藥後更嚴重的復胖
+- <span style="background-color: #ff9800; color: white; padding: 2px 4px; border-radius: 3px;">心理依賴問題</span>
+- <span style="color: #f44336; font-weight: bold;">停藥後更嚴重的復胖</span>
 
-### 機會成本
+### <span style="color: #9c27b0; font-weight: bold;">機會成本</span>
 - 錯過學習正確飲食的機會
 - 沒有建立健康的生活習慣
 - 浪費了真正改變的時間
-- 對身體智慧的不信任
+- <span style="background-color: #ff9800; color: white; padding: 2px 4px; border-radius: 3px;">對身體智慧的不信任</span>
 
 ## 給正在考慮瘦瘦針的你
 
@@ -275,9 +287,17 @@ ABC瘦身法不是要你依賴任何外在的工具或藥物，而是要幫你�
       title: '瘦瘦針讓你瘦了，但你的身體還認識你嗎？',
       category: '身體智慧',
       readTime: '7分鐘閱讀',
-      content: `昨天我在社群上看到一位女性分享她打瘦瘦針的經驗，她說：「我現在吃一點點就飽了，但總覺得這種飽不是真的飽，好像胃被什麼東西堵住了一樣。有時候明明應該餓了，但身體卻沒有任何感覺，就像失去了飢餓的能力。最可怕的是，我開始分不清楚什麼時候是真的想吃，什麼時候只是藥物在控制我。」
+      content: `昨天我在社群上看到一位女性分享她打瘦瘦針的經驗，她說：
 
-這段話讓我想起了我們ABC瘦身法的一位學員佩如，她曾經說過：「身體會慢慢跟你說，他想要什麼、不想要什麼。」
+<div style="border-left: 4px solid #f44336; background-color: #ffebee; padding: 12px; margin: 16px 0; border-radius: 4px;">
+「我現在吃一點點就飽了，但總覺得<span style="color: #f44336; font-weight: bold;">這種飽不是真的飽，好像胃被什麼東西堵住了一樣</span>。有時候明明應該餓了，但身體卻沒有任何感覺，<span style="background-color: #ff9800; color: white; padding: 2px 4px; border-radius: 3px;">就像失去了飢餓的能力</span>。最可怕的是，我開始<span style="color: #f44336; font-weight: bold;">分不清楚什麼時候是真的想吃，什麼時候只是藥物在控制我</span>。」
+</div>
+
+這段話讓我想起了我們ABC瘦身法的一位學員佩如，她曾經說過：
+
+<div style="border-left: 4px solid #4caf50; background-color: #e8f5e8; padding: 12px; margin: 16px 0; border-radius: 4px;">
+「<span style="background-color: #4caf50; color: white; padding: 2px 4px; border-radius: 3px;">身體會慢慢跟你說，他想要什麼、不想要什麼。</span>」
+</div>
 
 同樣是瘦身，為什麼會有這麼大的差別？
 
@@ -285,46 +305,48 @@ ABC瘦身法不是要你依賴任何外在的工具或藥物，而是要幫你�
 
 我太懂那種感覺了。
 
-當你依賴外力讓身體快速改變時，你的身體其實是被迫的、是困惑的。它不知道發生了什麼事，只知道突然不想吃東西了，突然胃口變小了，突然體重掉了。
+當你依賴外力讓身體快速改變時，你的身體其實是<span style="color: #f44336; font-weight: bold;">被迫的、是困惑的</span>。它不知道發生了什麼事，只知道<span style="background-color: #ff9800; color: white; padding: 2px 4px; border-radius: 3px;">突然不想吃東西了，突然胃口變小了，突然體重掉了</span>。
 
 但這種「突然」，真的是你的身體想要的嗎？
 
 我遇過太多這樣的案例：
 
-打瘦瘦針的時候，體重確實下降很快，一個月可能瘦8-10公斤。但停藥後呢？身體就像彈簧一樣反彈回來，而且往往比之前更胖。
+<div style="border-left: 4px solid #ff9800; background-color: #fff3e0; padding: 12px; margin: 16px 0; border-radius: 4px;">
+打瘦瘦針的時候，體重確實下降很快，<span style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">一個月可能瘦8-10公斤</span>。但停藥後呢？<span style="color: #f44336; font-weight: bold;">身體就像彈簧一樣反彈回來，而且往往比之前更胖</span>。
+</div>
 
-更可怕的是，經歷過這種「被迫瘦身」的身體，會變得更加混亂。它不知道什麼是正常的飢餓感，不知道什麼是真正的飽足感，甚至連基本的新陳代謝都可能被打亂。
+更可怕的是，經歷過這種「被迫瘦身」的身體，會變得更加混亂。它不知道什麼是正常的飢餓感，不知道什麼是真正的飽足感，甚至連<span style="background-color: #f44336; color: white; padding: 2px 4px; border-radius: 3px;">基本的新陳代謝都可能被打亂</span>。
 
-你花了5-10萬，得到的是一個更加困惑、更難瘦下來的身體。
+你花了<span style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">5-10萬</span>，得到的是一個<span style="color: #f44336; font-weight: bold;">更加困惑、更難瘦下來的身體</span>。
 
-這真的是你要的嗎？
+<span style="color: #f44336; font-weight: bold; font-size: 1.1em;">這真的是你要的嗎？</span>
 
 ## 身體智慧 vs 藥物控制
 
 讓我用一個比喻來解釋這個差別：
 
-### 瘦瘦針就像是給身體戴上了一個「控制器」
+### <span style="color: #f44336;">瘦瘦針就像是給身體戴上了一個「控制器」</span>
 
-想像你的身體是一台精密的機器，它有自己的運作邏輯和節奏。瘦瘦針就像是強行給這台機器裝上一個外部控制器，強迫它按照藥物的指令運作。
+想像你的身體是一台精密的機器，它有自己的運作邏輯和節奏。瘦瘦針就像是<span style="background-color: #ff9800; color: white; padding: 2px 4px; border-radius: 3px;">強行給這台機器裝上一個外部控制器，強迫它按照藥物的指令運作</span>。
 
-- 藥物說「不餓」，身體就不餓
-- 藥物說「飽了」，身體就飽了
-- 藥物說「不想吃」，身體就不想吃
+- <span style="color: #f44336;">藥物說「不餓」，身體就不餓</span>
+- <span style="color: #f44336;">藥物說「飽了」，身體就飽了</span>
+- <span style="color: #f44336;">藥物說「不想吃」，身體就不想吃</span>
 
-但問題是，這個控制器一旦移除，身體就會完全失去方向。它已經忘記了如何自然地感受飢餓和飽足，忘記了如何選擇對自己有益的食物。
+但問題是，<span style="background-color: #f44336; color: white; padding: 2px 4px; border-radius: 3px;">這個控制器一旦移除，身體就會完全失去方向</span>。它已經忘記了如何自然地感受飢餓和飽足，忘記了如何選擇對自己有益的食物。
 
-### ABC瘦身法則是幫助身體重新找回自己的智慧
+### <span style="color: #4caf50;">ABC瘦身法則是幫助身體重新找回自己的智慧</span>
 
-我們不是要控制你的身體，而是要幫助你的身體重新學會如何正確運作。
+我們不是要控制你的身體，而是要<span style="background-color: #4caf50; color: white; padding: 2px 4px; border-radius: 3px;">幫助你的身體重新學會如何正確運作</span>。
 
 當你給身體正確的營養，當你學會傾聽身體的需求，當你建立健康的生活節奏時，你會發現一個神奇的現象：
 
-- 身體會自然地告訴你什麼時候餓了
-- 身體會自然地告訴你什麼時候飽了
-- 身體會自然地渴望對它有益的食物
-- 身體會自然地排斥對它有害的東西
+- <span style="color: #4caf50; font-weight: bold;">身體會自然地告訴你什麼時候餓了</span>
+- <span style="color: #4caf50; font-weight: bold;">身體會自然地告訴你什麼時候飽了</span>
+- <span style="color: #4caf50; font-weight: bold;">身體會自然地渴望對它有益的食物</span>
+- <span style="color: #4caf50; font-weight: bold;">身體會自然地排斥對它有害的東西</span>
 
-這不是藥物的控制，這是身體本來就有的智慧。
+這不是藥物的控制，這是<span style="background-color: #4caf50; color: white; padding: 2px 4px; border-radius: 3px;">身體本來就有的智慧</span>。
 
 ## 真實學員的身體智慧覺醒
 
@@ -332,19 +354,23 @@ ABC瘦身法不是要你依賴任何外在的工具或藥物，而是要幫你�
 
 ### 佩如的故事
 
+<div style="border-left: 4px solid #2196f3; background-color: #e3f2fd; padding: 12px; margin: 16px 0; border-radius: 4px;">
 「剛開始的時候，我完全不知道什麼是真正的飢餓感。我習慣了按時間吃飯，習慣了吃到撐，習慣了用食物來處理情緒。
 
 但跟著ABC瘦身法學習後，我開始慢慢感受到身體的聲音。現在我知道什麼時候是真的餓了，什麼時候只是嘴饞。我知道吃到什麼程度是剛好的，什麼時候應該停下來。
 
-最神奇的是，我的身體開始自動選擇健康的食物。以前我看到甜食就忍不住，現在我的身體會告訴我：『這個對我不好，我不想要。』」
+最神奇的是，<span style="background-color: #4caf50; color: white; padding: 2px 4px; border-radius: 3px;">我的身體開始自動選擇健康的食物</span>。以前我看到甜食就忍不住，現在我的身體會告訴我：『這個對我不好，我不想要。』」
+</div>
 
 ### 小雯的轉變
 
-「我以前總是在節食和暴食之間擺盪。節食的時候痛苦地忍耐，一旦破戒就瘋狂地吃，然後又陷入罪惡感。
+<div style="border-left: 4px solid #9c27b0; background-color: #f3e5f5; padding: 12px; margin: 16px 0; border-radius: 4px;">
+「我以前總是在<span style="color: #f44336; font-weight: bold;">節食和暴食之間擺盪</span>。節食的時候痛苦地忍耐，一旦破戒就瘋狂地吃，然後又陷入罪惡感。
 
-學習ABC瘦身法後，我發現我不需要再和食物戰鬥了。當我給身體足夠的營養時，它自然就不會渴望垃圾食物。當我學會傾聽身體的聲音時，我自然就知道什麼時候該停止進食。
+學習ABC瘦身法後，我發現<span style="background-color: #4caf50; color: white; padding: 2px 4px; border-radius: 3px;">我不需要再和食物戰鬥了</span>。當我給身體足夠的營養時，它自然就不會渴望垃圾食物。當我學會傾聽身體的聲音時，我自然就知道什麼時候該停止進食。
 
 現在的我，終於和我的身體成為了朋友，而不是敵人。」
+</div>
 
 ## 瘦瘦針讓你失去的不只是金錢
 
@@ -395,23 +421,19 @@ ABC瘦身法不是要你依賴任何外在的工具，而是要幫你重新發�
       title: '醫生緊急警告：瘦瘦針讓你失去了什麼？',
       category: '醫學警告',
       readTime: '9分鐘閱讀',
-      content: `一項最新研究讓醫學界震驚了。
+      content: `一項最新研究讓醫學界震驚了。英國Asda Online Doctor針對瘦瘦針使用者進行的調查發現：<span style="background-color: #f44336; color: white; padding: 2px 4px; border-radius: 3px;">37%的使用者擔心自己營養不足</span>；<span style="color: #f44336; font-weight: bold;">52%的人每週會跳過好幾次正餐</span>，更驚人的是，<span style="background-color: #ff9800; color: white; padding: 2px 4px; border-radius: 3px;">31%的人根本不知道在使用瘦瘦針期間應該吃什麼</span>。
 
-英國Asda Online Doctor針對瘦瘦針使用者進行的調查發現：37%的使用者擔心自己營養不足，52%的人每週會跳過好幾次正餐，更驚人的是，31%的人根本不知道在使用瘦瘦針期間應該吃什麼。
+Dr. Crystal Wyllie醫生發出緊急警告：「<span style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">許多患者在飢餓信號改變時難以攝取足夠的蛋白質和必需營養素，維持適當營養對長期健康至關重要</span>。」
 
-Dr. Crystal Wyllie醫生發出緊急警告：「許多患者在飢餓信號改變時難以攝取足夠的蛋白質和必需營養素，維持適當營養對長期健康至關重要。」
-
-這讓我想問：為了瘦身，你願意失去健康嗎？為了快速的體重下降，你願意失去身體的智慧嗎？
-
-當醫生都在警告瘦瘦針的營養風險時，你還要繼續相信「打一針就能瘦」的神話嗎？
+這讓我想問：為了瘦身，你願意失去健康嗎？為了快速的體重下降，你願意失去身體的智慧嗎？當醫生都在警告瘦瘦針的營養風險時，你還要繼續相信「<span style="color: #f44336; font-weight: bold;">打一針就能瘦</span>」的神話嗎？
 
 ## 被廣告遮蔽的真相
 
-我知道，選擇瘦瘦針的你，一定是被那些「輕鬆瘦身」的廣告吸引了。
+我知道，選擇瘦瘦針的你，一定是那些被廣告吸引了的人。看到瘦瘦針的廣告心想：「<span style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">終於有一個不用改變生活方式就能瘦的方法了</span>！」
 
-也許你是那個工作忙碌、沒時間運動的上班族，看到瘦瘦針的廣告心想：「終於有一個不用改變生活方式就能瘦的方法了！」你以為打一針就能解決所有問題，卻沒想到會面臨營養不足的風險。
+你以為打一針就能解決所有問題，卻沒想過會面臨營養不足的風險。當你看到身邊用瘦瘦針成功的人，你想：「<span style="color: #f44336; font-weight: bold;">這次一定要成功！</span>」但你有想過停藥後會發生什麼嗎？
 
-也許你是那個嘗試過無數減肥方法都失敗的人，當聽到瘦瘦針時，你想：「這次一定要成功！」但你有想過嗎？當你的身體被藥物強迫不想吃東西時，你同時也失去了學習正確飲食的機會。
+當聽到瘦瘦針時，你親愛的，我必須告訴你一個殘酷的真相：<span style="background-color: #f44336; color: white; padding: 2px 4px; border-radius: 3px;">那些廣告不會告訴你的風險，正在悄悄侵蝕你的健康</span>。身體被藥物強迫不想吃東西時，你同時也失去了學習正確飲食的機會。
 
 也許你是那個看到身邊朋友使用瘦瘦針成功的人，你羨慕她們快速的體重下降，卻沒看到她們私下的困擾：不知道該吃什麼、擔心營養不足、經常跳餐、甚至出現消化不良、腹脹、便秘等副作用。
 
@@ -423,50 +445,50 @@ Dr. Crystal Wyllie醫生發出緊急警告：「許多患者在飢餓信號改�
 
 讓我們來看看醫學研究發現的事實：
 
-### 營養不足的風險
+### <span style="color: #f44336; font-weight: bold;">營養不足的風險</span>
 
 英國最新研究顯示：
-- **37%的使用者擔心營養不足**：這不是無謂的擔心，而是真實的風險
-- **52%的人經常跳餐**：當食慾被強制抑制時，很多人根本吃不下正常的餐點
-- **31%的人不知道該吃什麼**：藥物改變了飢餓信號，讓人失去了對食物的正常判斷
+- <span style="background-color: #f44336; color: white; padding: 2px 4px; border-radius: 3px;">**37%的使用者擔心營養不足**</span>：這不是無謂的擔心，而是真實的風險
+- <span style="color: #f44336; font-weight: bold;">**52%的人經常跳餐**</span>：當食慾被強制抑制時，很多人根本吃不下正常的餐點
+- <span style="background-color: #ff9800; color: white; padding: 2px 4px; border-radius: 3px;">**31%的人不知道該吃什麼**</span>：藥物改變了飢餓信號，讓人失去了對食物的正常判斷
 
-### 消化系統副作用
+### <span style="color: #ff9800; font-weight: bold;">消化系統副作用</span>
 
 臨床研究發現，瘦瘦針使用者常見的副作用包括：
-- **噁心和嘔吐**：高達20-30%的使用者會經歷
+- <span style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">**噁心和嘔吐**：高達20-30%的使用者會經歷</span>
 - **腹瀉或便秘**：消化系統功能紊亂
 - **腹脹和胃痛**：胃排空延遲導致的不適
 - **胃食道逆流**：長期使用可能加重消化道問題
 
-### 心理依賴問題
+### <span style="color: #9c27b0; font-weight: bold;">心理依賴問題</span>
 
 更嚴重的是心理層面的影響：
-- **對藥物的依賴**：害怕停藥後復胖
+- <span style="background-color: #ff9800; color: white; padding: 2px 4px; border-radius: 3px;">**對藥物的依賴**：害怕停藥後復胖</span>
 - **飲食行為混亂**：失去對正常飢餓感的認知
-- **自信心下降**：不相信自己有控制體重的能力
+- <span style="color: #f44336; font-weight: bold;">**自信心下降**：不相信自己有控制體重的能力</span>
 - **焦慮和恐慌**：擔心停藥後的後果
 
 ## 瘦瘦針讓你失去的五樣珍貴東西
 
-### 1. 營養均衡的能力
+### <span style="color: #f44336;">1. 營養均衡的能力</span>
 
-當你的食慾被藥物強制抑制時，你很難攝取到身體所需的完整營養。蛋白質不足、維生素缺乏、礦物質失衡...這些都會對你的長期健康造成影響。
+當你的食慾被藥物強制抑制時，你很難攝取到身體所需的完整營養。<span style="background-color: #ff9800; color: white; padding: 2px 4px; border-radius: 3px;">蛋白質不足、維生素缺乏、礦物質失衡</span>...這些都會對你的長期健康造成影響。
 
-### 2. 身體的自然智慧
+### <span style="color: #f44336;">2. 身體的自然智慧</span>
 
-你的身體本來知道什麼時候餓、什麼時候飽、需要什麼營養。但瘦瘦針打亂了這些自然信號，讓你失去了與身體溝通的能力。
+你的身體本來知道什麼時候餓、什麼時候飽、需要什麼營養。但<span style="background-color: #f44336; color: white; padding: 2px 4px; border-radius: 3px;">瘦瘦針打亂了這些自然信號，讓你失去了與身體溝通的能力</span>。
 
-### 3. 學習健康生活的機會
+### <span style="color: #f44336;">3. 學習健康生活的機會</span>
 
-真正的健康瘦身需要學習正確的飲食方式、建立良好的生活習慣。但當你依賴藥物時，你錯過了這些寶貴的學習機會。
+真正的健康瘦身需要學習正確的飲食方式、建立良好的生活習慣。但當你依賴藥物時，<span style="color: #f44336; font-weight: bold;">你錯過了這些寶貴的學習機會</span>。
 
-### 4. 經濟自由
+### <span style="color: #ff9800;">4. 經濟自由</span>
 
-每個月1萬6的費用，一年就是19萬2千元。更可怕的是，這可能是一個無底洞，因為停藥就復胖，你可能需要終身依賴。
+<span style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">每個月1萬6的費用，一年就是19萬2千元</span>。更可怕的是，這可能是一個無底洞，因為<span style="color: #f44336; font-weight: bold;">停藥就復胖，你可能需要終身依賴</span>。
 
-### 5. 內心的平靜
+### <span style="color: #9c27b0;">5. 內心的平靜</span>
 
-當你總是擔心停藥後的復胖，當你總是依賴外在的工具來維持體重時，你很難真正享受內心的平靜和自信。
+當你總是擔心停藥後的復胖，當你總是依賴外在的工具來維持體重時，<span style="background-color: #9c27b0; color: white; padding: 2px 4px; border-radius: 3px;">你很難真正享受內心的平靜和自信</span>。
 
 ## ABC瘦身法：醫生認可的健康方案
 
@@ -586,15 +608,8 @@ Dr. Crystal Wyllie醫生發出緊急警告：「許多患者在飢餓信號改�
           )
         }
         
-        // 處理帶有HTML標籤的段落
-        if (paragraph.includes('<span class=')) {
-          return (
-            <div key={index} className="mb-6" dangerouslySetInnerHTML={{ __html: paragraph }} />
-          )
-        }
-        
-        // 處理引用框
-        if (paragraph.includes('<div class="bg-')) {
+        // 處理帶有HTML標籤的段落（包括style屬性）
+        if (paragraph.includes('<span') || paragraph.includes('<div') || paragraph.includes('</span>') || paragraph.includes('</div>') || paragraph.includes('style=')) {
           return (
             <div key={index} className="mb-6" dangerouslySetInnerHTML={{ __html: paragraph }} />
           )

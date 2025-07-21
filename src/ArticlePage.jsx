@@ -6,6 +6,20 @@ function ArticlePage({ articleId, onBack }) {
   const [article, setArticle] = useState(null)
   const [loading, setLoading] = useState(true)
 
+  // 處理錨點跳轉
+  useEffect(() => {
+    const hash = window.location.hash
+    if (hash) {
+      // 延遲一點時間確保頁面已經渲染完成
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1))
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 300)
+    }
+  }, [articleId])
+
   const articles = {
     'rebound-analysis': {
       title: '95%的人都會復胖，但這5%做對了什麼？',
@@ -584,32 +598,129 @@ Dr. Crystal Wyllie醫生發出緊急警告：「<span style="background-color: #
     )
   }
 
+  // 提取文章標題作為目錄
+  const extractTableOfContents = (content) => {
+    const lines = content.split('\n')
+    const toc = []
+    
+    lines.forEach((line, index) => {
+      if (line.startsWith('## ') || line.startsWith('### ')) {
+        const level = line.startsWith('## ') ? 2 : 3
+        const titleContent = line.replace(/^#{2,3} /, '')
+        const cleanTitle = titleContent.replace(/<[^>]*>/g, '') // 移除HTML標籤
+        const anchorId = titleContent.replace(/<[^>]*>/g, '').replace(/[^\w\u4e00-\u9fa5]/g, '').toLowerCase()
+        
+        toc.push({
+          id: anchorId,
+          title: cleanTitle,
+          level: level
+        })
+      }
+    })
+    
+    return toc
+  }
+
+  // 平滑滾動到錨點
+  const scrollToAnchor = (anchorId) => {
+    const element = document.getElementById(anchorId)
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+
+  // 目錄組件
+  const TableOfContents = ({ toc }) => {
+    if (!toc || toc.length === 0) return null
+    
+    return (
+      <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8">
+        <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+          </svg>
+          文章目錄
+        </h3>
+        <ul className="space-y-2">
+          {toc.map((item, index) => (
+            <li key={index} className={item.level === 3 ? 'ml-4' : ''}>
+              <button
+                onClick={() => scrollToAnchor(item.id)}
+                className={`text-left w-full hover:text-blue-600 transition-colors duration-200 ${
+                  item.level === 2 ? 'font-medium text-gray-800' : 'text-gray-600'
+                }`}
+              >
+                {item.title}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+
   const renderArticleContent = (content) => {
     // 將HTML內容轉換為JSX組件
     const processContent = (htmlContent) => {
-      // 分割內容為段落
-      const paragraphs = htmlContent.split('\n\n').filter(p => p.trim())
+      // 先處理整個內容，確保HTML標籤完整
+      let processedContent = htmlContent
+      
+      // 分割內容為段落，但保持HTML標籤的完整性
+      const paragraphs = processedContent.split('\n\n').filter(p => p.trim())
       
       return paragraphs.map((paragraph, index) => {
-        // 處理標題
+        // 處理標題（包含HTML標籤的標題）
         if (paragraph.startsWith('## ')) {
+          const titleContent = paragraph.replace('## ', '')
+          // 生成錨點ID（移除HTML標籤和特殊字符）
+          const anchorId = titleContent.replace(/<[^>]*>/g, '').replace(/[^\w\u4e00-\u9fa5]/g, '').toLowerCase()
+          
+          if (titleContent.includes('<span') || titleContent.includes('style=')) {
+            return (
+              <h2 key={index} id={anchorId} className="text-2xl font-bold text-gray-800 mb-6 mt-8 scroll-mt-20" dangerouslySetInnerHTML={{ __html: titleContent }} />
+            )
+          }
           return (
-            <h2 key={index} className="text-2xl font-bold text-gray-800 mb-6 mt-8">
-              {paragraph.replace('## ', '')}
+            <h2 key={index} id={anchorId} className="text-2xl font-bold text-gray-800 mb-6 mt-8 scroll-mt-20">
+              {titleContent}
             </h2>
           )
         }
         
         if (paragraph.startsWith('### ')) {
+          const titleContent = paragraph.replace('### ', '')
+          // 生成錨點ID（移除HTML標籤和特殊字符）
+          const anchorId = titleContent.replace(/<[^>]*>/g, '').replace(/[^\w\u4e00-\u9fa5]/g, '').toLowerCase()
+          
+          if (titleContent.includes('<span') || titleContent.includes('style=')) {
+            return (
+              <h3 key={index} id={anchorId} className="text-xl font-semibold text-gray-800 mb-4 mt-6 scroll-mt-20" dangerouslySetInnerHTML={{ __html: titleContent }} />
+            )
+          }
           return (
-            <h3 key={index} className="text-xl font-semibold text-gray-800 mb-4 mt-6">
-              {paragraph.replace('### ', '')}
+            <h3 key={index} id={anchorId} className="text-xl font-semibold text-gray-800 mb-4 mt-6 scroll-mt-20">
+              {titleContent}
             </h3>
           )
         }
         
-        // 處理帶有HTML標籤的段落（包括style屬性）
-        if (paragraph.includes('<span') || paragraph.includes('<div') || paragraph.includes('</span>') || paragraph.includes('</div>') || paragraph.includes('style=')) {
+        // 檢查是否包含任何HTML標籤或樣式
+        const hasHtmlTags = paragraph.includes('<span') || 
+                           paragraph.includes('<div') || 
+                           paragraph.includes('</span>') || 
+                           paragraph.includes('</div>') || 
+                           paragraph.includes('style=') || 
+                           paragraph.includes('background-color') || 
+                           paragraph.includes('color:') ||
+                           paragraph.includes('font-weight') ||
+                           paragraph.includes('padding') ||
+                           paragraph.includes('border-radius')
+        
+        // 如果包含HTML標籤，使用dangerouslySetInnerHTML渲染
+        if (hasHtmlTags) {
           return (
             <div key={index} className="mb-6" dangerouslySetInnerHTML={{ __html: paragraph }} />
           )
@@ -668,6 +779,9 @@ Dr. Crystal Wyllie醫生發出緊急警告：「<span style="background-color: #
 
           {/* Article Body */}
           <div className="p-8">
+            {/* Table of Contents */}
+            <TableOfContents toc={extractTableOfContents(article.content)} />
+            
             <div className="prose prose-lg max-w-none">
               {renderArticleContent(article.content)}
             </div>

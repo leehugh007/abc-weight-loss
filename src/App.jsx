@@ -221,11 +221,12 @@ function App() {
   }
 
   // 處理文章按鈕點擊
-  const handleArticleClick = (articleId) => {
+  const handleArticleClick = (articleId, anchor = null) => {
     setCurrentView('article')
     setCurrentArticle(articleId)
     // 更新URL，讓瀏覽器歷史記錄正確
-    window.history.pushState(null, '', `/article/${articleId}`)
+    const url = anchor ? `/article/${articleId}#${anchor}` : `/article/${articleId}`
+    window.history.pushState({ anchor }, '', url)
   }
 
   // 條件渲染：如果是文章頁面，顯示文章組件
@@ -1941,14 +1942,34 @@ function App() {
                   <p>• 分析極端方法的陷阱</p>
                   <p>• 成功者的系統性方法</p>
                 </div>
-                <Button 
-                  variant="outline" 
-                  className="w-full border-red-200 text-red-600 hover:bg-red-50"
-                  onClick={() => handleArticleClick('rebound-analysis')}
-                >
-                  閱讀完整分析
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
+                <div className="space-y-2">
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-red-200 text-red-600 hover:bg-red-50"
+                    onClick={() => handleArticleClick('rebound-analysis')}
+                  >
+                    閱讀完整分析
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                  <div className="grid grid-cols-2 gap-2">
+                    <Button 
+                      variant="ghost" 
+                      size="sm"
+                      className="text-xs text-red-500 hover:bg-red-50"
+                      onClick={() => handleArticleClick('rebound-analysis', '為什麼95%的人都會復胖？')}
+                    >
+                      📊 復胖原因
+                    </Button>
+                    <Button 
+                      variant="ghost" 
+                      size="sm"
+                      className="text-xs text-red-500 hover:bg-red-50"
+                      onClick={() => handleArticleClick('rebound-analysis', '那5%成功者做對了什麼？')}
+                    >
+                      🎯 成功秘訣
+                    </Button>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
@@ -1975,14 +1996,34 @@ function App() {
                   <p>• 停藥後更嚴重復胖</p>
                   <p>• 心理依賴的風險</p>
                 </div>
-                <Button 
-                  variant="outline" 
-                  className="w-full border-orange-200 text-orange-600 hover:bg-orange-50"
-                  onClick={() => handleArticleClick('ozempic-cost')}
-                >
-                  了解真實成本
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
+                <div className="space-y-2">
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-orange-200 text-orange-600 hover:bg-orange-50"
+                    onClick={() => handleArticleClick('ozempic-cost')}
+                  >
+                    了解真實成本
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                  <div className="grid grid-cols-2 gap-2">
+                    <Button 
+                      variant="ghost" 
+                      size="sm"
+                      className="text-xs text-orange-500 hover:bg-orange-50"
+                      onClick={() => handleArticleClick('ozempic-cost', '瘦瘦針的隱藏成本')}
+                    >
+                      💰 隱藏成本
+                    </Button>
+                    <Button 
+                      variant="ghost" 
+                      size="sm"
+                      className="text-xs text-orange-500 hover:bg-orange-50"
+                      onClick={() => handleArticleClick('ozempic-cost', 'ABC瘦身法：真正的解決方案')}
+                    >
+                      ✨ 健康方案
+                    </Button>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
@@ -2009,14 +2050,34 @@ function App() {
                   <p>• 身體認知混亂問題</p>
                   <p>• 自然vs強迫的對比</p>
                 </div>
-                <Button 
-                  variant="outline" 
-                  className="w-full border-purple-200 text-purple-600 hover:bg-purple-50"
-                  onClick={() => handleArticleClick('body-wisdom')}
-                >
-                  探索身體智慧
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
+                <div className="space-y-2">
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-purple-200 text-purple-600 hover:bg-purple-50"
+                    onClick={() => handleArticleClick('body-wisdom')}
+                  >
+                    探索身體智慧
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                  <div className="grid grid-cols-2 gap-2">
+                    <Button 
+                      variant="ghost" 
+                      size="sm"
+                      className="text-xs text-purple-500 hover:bg-purple-50"
+                      onClick={() => handleArticleClick('body-wisdom', '瘦瘦針是「強迫身體改變」')}
+                    >
+                      🧠 身體認知
+                    </Button>
+                    <Button 
+                      variant="ghost" 
+                      size="sm"
+                      className="text-xs text-purple-500 hover:bg-purple-50"
+                      onClick={() => handleArticleClick('body-wisdom', 'ABC瘦身法是「喚醒身體智慧」')}
+                    >
+                      💡 身體智慧
+                    </Button>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
@@ -2043,14 +2104,34 @@ function App() {
                   <p>• 消化系統副作用</p>
                   <p>• 醫學界的警告</p>
                 </div>
-                <Button 
-                  variant="outline" 
-                  className="w-full border-green-200 text-green-600 hover:bg-green-50"
-                  onClick={() => handleArticleClick('doctor-warning')}
-                >
-                  查看醫學警告
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
+                <div className="space-y-2">
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-green-200 text-green-600 hover:bg-green-50"
+                    onClick={() => handleArticleClick('doctor-warning')}
+                  >
+                    查看醫學警告
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                  <div className="grid grid-cols-2 gap-2">
+                    <Button 
+                      variant="ghost" 
+                      size="sm"
+                      className="text-xs text-green-500 hover:bg-green-50"
+                      onClick={() => handleArticleClick('doctor-warning', '醫學研究揭露的驚人真相')}
+                    >
+                      ⚕️ 醫學研究
+                    </Button>
+                    <Button 
+                      variant="ghost" 
+                      size="sm"
+                      className="text-xs text-green-500 hover:bg-green-50"
+                      onClick={() => handleArticleClick('doctor-warning', '營養師的專業建議')}
+                    >
+                      👩‍⚕️ 專業建議
+                    </Button>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>

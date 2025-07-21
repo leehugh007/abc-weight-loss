@@ -250,7 +250,7 @@ function App() {
               <a href="#about" className="text-gray-600 hover:text-rose-500 transition-colors">理念</a>
               <a href="#single-mom-story" className="text-gray-600 hover:text-rose-500 transition-colors">學員見證</a>
               <a href="#features" className="text-gray-600 hover:text-rose-500 transition-colors">課程特色</a>
-              <a href="#專業觀點" className="text-gray-600 hover:text-rose-500 transition-colors">專業觀點</a>
+              <a href="#professional-insights" className="text-gray-600 hover:text-rose-500 transition-colors">專業觀點</a>
               <a href="#contact" className="text-gray-600 hover:text-rose-500 transition-colors">聯繫我們</a>
             </div>
             
@@ -297,7 +297,7 @@ function App() {
                   課程特色
                 </a>
                 <a 
-                  href="#專業觀點" 
+                  href="#professional-insights" 
                   className="text-gray-600 hover:text-rose-500 transition-colors py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -1915,11 +1915,11 @@ function App() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <Badge 
-              id="專業觀點"
+              id="professional-insights"
               className="mb-6 bg-blue-100 text-blue-700 hover:bg-blue-200 text-lg px-6 py-3 cursor-pointer transition-all duration-300 hover:scale-105"
               onClick={() => {
                 // 複製錨點連結到剪貼板
-                const url = `${window.location.origin}${window.location.pathname}#專業觀點`
+                const url = `${window.location.origin}${window.location.pathname}#professional-insights`
                 navigator.clipboard.writeText(url).then(() => {
                   // 可以添加一個小提示，但這裡先簡單處理
                   console.log('連結已複製到剪貼板')

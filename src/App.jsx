@@ -1906,10 +1906,21 @@ function App() {
       <section id="ozempic-insights" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-blue-100 text-blue-700 hover:bg-blue-200">
-              專業觀點
+            <Badge 
+              id="專業觀點"
+              className="mb-6 bg-blue-100 text-blue-700 hover:bg-blue-200 text-lg px-6 py-3 cursor-pointer transition-all duration-300 hover:scale-105"
+              onClick={() => {
+                // 複製錨點連結到剪貼板
+                const url = `${window.location.origin}${window.location.pathname}#專業觀點`
+                navigator.clipboard.writeText(url).then(() => {
+                  // 可以添加一個小提示，但這裡先簡單處理
+                  console.log('連結已複製到剪貼板')
+                })
+              }}
+            >
+              🎯 專業觀點
             </Badge>
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-5xl font-bold text-gray-800 mb-6">
               為什麼在瘦瘦針如此流行的時代，我們依然堅持健康瘦身？
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">

@@ -4,6 +4,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge.jsx'
 import { Heart, Users, Target, CheckCircle, Star, ArrowRight, Shield, Clock, Award, Wrench, Plus, Hammer, X, Utensils, PartyPopper, Frown, Plane, Menu } from 'lucide-react'
 import ArticlePage from './ArticlePage.jsx'
+import { trackPageView, trackButtonClick } from './utils/analytics.js'
+import { useScrollTracking } from './hooks/useScrollTracking.js'
 import './App.css'
 
 function App() {
@@ -11,6 +13,9 @@ function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [currentView, setCurrentView] = useState('home')
   const [currentArticle, setCurrentArticle] = useState(null)
+  
+  // 使用滾動追蹤Hook
+  const { resetTracking } = useScrollTracking()
 
   // 初始化時檢查URL
   useEffect(() => {
@@ -21,6 +26,8 @@ function App() {
       const articleId = path.replace('/article/', '')
       setCurrentView('article')
       setCurrentArticle(articleId)
+      // 追蹤文章頁面瀏覽
+      trackPageView(path, `文章 - ${articleId}`)
     } else if (hash) {
       // 處理錨點連結
       setTimeout(() => {
@@ -29,6 +36,11 @@ function App() {
           element.scrollIntoView({ behavior: 'smooth' })
         }
       }, 100)
+      // 追蹤主頁特定區塊瀏覽
+      trackPageView(`/${hash}`, `首頁 - ${hash.substring(1)}`)
+    } else {
+      // 追蹤首頁瀏覽
+      trackPageView('/', '首頁')
     }
   }, [])
 

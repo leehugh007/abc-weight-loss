@@ -1463,42 +1463,8 @@ function App() {
         </div>
       </section>
 
-      {/* CTA區塊 - 在四寶媽故事後 */}
-      <section className="py-12 px-4 bg-gradient-to-r from-rose-100 to-pink-100">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-              看到這些成功案例，是不是也想開始自己的瘦身之路？
-            </h3>
-            <p className="text-lg text-gray-600 mb-2">
-              🎯 免費了解：告訴我們你的目標體重
-            </p>
-            <p className="text-lg text-gray-600 mb-6">
-              💬 立即開始對話
-            </p>
-            <a 
-              href="https://lin.ee/ApHSqCU"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-              onClick={() => {
-                // 追蹤點擊事件
-                if (typeof gtag !== 'undefined') {
-                  gtag('event', 'line_consultation_click', {
-                    'event_category': 'conversion',
-                    'event_label': 'from_testimonials_section'
-                  });
-                }
-              }}
-            >
-              💬 立即開始對話
-            </a>
-            <p className="text-sm text-gray-500 mt-4">
-              點擊後將開啟LINE，與我們的專業團隊開始對話
-            </p>
-          </div>
-        </div>
-      </section>
+
+      
 
       {/* 學員見證 */}
       <section id="testimonials" className="py-16 px-4 bg-white">

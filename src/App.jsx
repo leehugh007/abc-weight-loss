@@ -1460,6 +1460,30 @@ function App() {
               </div>
             </div>
           </Card>
+
+          <div className="text-center mt-12">
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100 max-w-4xl mx-auto">
+              <p className="text-xl text-gray-700 mb-6 italic">
+                "看到這些成功案例，是不是也想開始自己的瘦身之路？"
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white px-8 py-3"
+                  onClick={() => {
+                    window.open("https://lin.ee/ApHSqCU", "_blank")
+                    trackButtonClick("line_consultation_click", "四寶媽故事後CTA")
+                  }}
+                >
+                  🎯 免費了解：告訴我們你的目標體重
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </div>
+              <p className="text-lg text-gray-600 mt-4">
+                💬 立即開始對話
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

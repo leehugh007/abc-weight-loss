@@ -1833,7 +1833,7 @@ function App() {
               <div className="space-y-4 text-lg text-gray-700">
                 <p>不是因為我不懂行銷，不是因為我跟不上時代。</p>
                 <p>而是因為我知道，<strong className="text-rose-600">真正的改變，不只是體重數字的下降，而是整個人生的翻轉。</strong></p>
-                <p>當我看到小美從絕望到重燃希望，從痛苦到重獲自由，我就知道：</p>
+                <p>當我看到慧敏從絕望到重燃希望，從痛苦到重獲自由，我就知道：</p>
                 <p className="text-2xl font-bold text-blue-600">這才是我想做的事情。</p>
               </div>
             </div>
@@ -1862,7 +1862,7 @@ function App() {
           {/* 溫暖的行動呼籲 */}
           <div className="text-center mt-12">
             <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">如果小美的故事觸動了你...</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">如果慧敏的故事觸動了你...</h3>
               <div className="space-y-3 text-lg text-gray-700 mb-8">
                 <p>如果你也想要的是健康的改變</p>
                 <p>如果你也相信身體健康比快速瘦身更重要</p>

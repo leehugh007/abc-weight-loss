@@ -6,6 +6,7 @@ import { Heart, Users, Target, CheckCircle, Star, ArrowRight, Shield, Clock, Awa
 import ArticlePage from './ArticlePage.jsx'
 import { trackPageView, trackButtonClick } from './utils/analytics.js'
 import { useScrollTracking } from './hooks/useScrollTracking.js'
+import meimeiTransformation from './assets/meimei-transformation.jpg'
 import './App.css'
 
 function App() {
@@ -1505,6 +1506,73 @@ function App() {
             </p>
           </div>
           
+          {/* 美美的特色故事 */}
+          <div className="mb-16">
+            <Card className="bg-gradient-to-r from-rose-50 to-pink-50 border-rose-200 shadow-xl">
+              <CardContent className="p-0">
+                <div className="grid md:grid-cols-2 gap-0">
+                  {/* 照片區塊 */}
+                  <div className="relative">
+                    <img 
+                      src={meimeiTransformation} 
+                      alt="美美的瘦身前後對比" 
+                      className="w-full h-full object-cover rounded-l-lg md:rounded-l-lg md:rounded-r-none rounded-r-lg md:rounded-r-none"
+                    />
+                    <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2">
+                      <p className="text-sm font-bold text-rose-600">體重 -21.8kg</p>
+                      <p className="text-xs text-gray-600">體脂 -16% • 腰圍 -12.5cm</p>
+                    </div>
+                  </div>
+                  
+                  {/* 內容區塊 */}
+                  <div className="p-6 md:p-8">
+                    <div className="flex items-center justify-between mb-4">
+                      <div>
+                        <h3 className="text-2xl font-bold text-gray-800">美美</h3>
+                        <p className="text-gray-600">7年級生 • 業務+進修生</p>
+                      </div>
+                      <Badge className="bg-rose-100 text-rose-700 border-rose-200">
+                        特色見證
+                      </Badge>
+                    </div>
+                    
+                    <blockquote className="text-gray-700 italic mb-6 border-l-4 border-rose-300 pl-4 text-lg leading-relaxed">
+                      "我要選擇一個雖然速度比較慢，但是可以維持一輩子的方式，健康瘦下來。"
+                    </blockquote>
+                    
+                    <div className="space-y-4">
+                      <div className="bg-white/70 rounded-lg p-4">
+                        <h4 className="font-semibold text-gray-800 mb-2">🎯 轉變歷程</h4>
+                        <p className="text-sm text-gray-600 leading-relaxed">
+                          從差點破百到現在7字頭，歷經六期課程的堅持。不只是體重下降，血壓、血脂、糖化血色素全部恢復正常，內臟脂肪從中重度變成沒有脂肪肝。
+                        </p>
+                      </div>
+                      
+                      <div className="bg-green-50 rounded-lg p-4">
+                        <h4 className="font-semibold text-green-800 mb-2">✨ 最大收穫</h4>
+                        <p className="text-sm text-green-700 leading-relaxed">
+                          找到了一種可以一輩子持續下去的生活方式，身體變聰明了，不再害怕復胖。
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="mt-6 pt-4 border-t border-rose-200">
+                      <p className="text-xs text-gray-500 italic">
+                        "瘦是健康的附加價值，我們要的是瘦一輩子，而不是瘦一陣子。"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+          
+          {/* 其他學員見證 */}
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">更多真實轉變</h3>
+            <p className="text-gray-600">每個人都有自己的故事</p>
+          </div>
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
@@ -1603,6 +1671,40 @@ function App() {
               </div>
             </div>
           </Card>
+        </div>
+      </section>
+
+      {/* CTA區塊 - 在學員見證後 */}
+      <section className="py-12 px-4 bg-gradient-to-r from-rose-100 to-pink-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="bg-white rounded-2xl shadow-xl p-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+              看到這些成功案例，是不是也想開始自己的瘦身之路？
+            </h3>
+            <p className="text-lg text-gray-600 mb-6">
+              🎯 免費了解：告訴我們你的目標體重
+            </p>
+            <a 
+              href="https://lin.ee/ApHSqCU"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              onClick={() => {
+                // 追蹤點擊事件
+                if (typeof gtag !== 'undefined') {
+                  gtag('event', 'line_consultation_click', {
+                    'event_category': 'conversion',
+                    'event_label': 'from_testimonials_section'
+                  });
+                }
+              }}
+            >
+              💬 立即開始對話
+            </a>
+            <p className="text-sm text-gray-500 mt-4">
+              點擊後將開啟LINE，與我們的專業團隊開始對話
+            </p>
+          </div>
         </div>
       </section>
 

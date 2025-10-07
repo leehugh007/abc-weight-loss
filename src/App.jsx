@@ -2286,9 +2286,63 @@ function App() {
                       variant="ghost" 
                       size="sm"
                       className="text-xs text-green-500 hover:bg-green-50"
-                      onClick={() => handleArticleClick('doctor-warning', '營養師的專業建議')}
+                      onClick={() => handleArticleClick('doctor-warning', 'ABC瘦身法：醫生認可的健康方案')}
                     >
-                      👩‍⚕️ 專業建議
+                      ✅ 健康方案
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* 文章5：澱粉補救 */}
+            <Card className="hover:shadow-xl transition-all duration-300 bg-white border-l-4 border-l-blue-400">
+              <CardHeader className="pb-4">
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <Badge className="mb-3 bg-blue-100 text-blue-700">飲食指南</Badge>
+                    <CardTitle className="text-xl text-gray-800 leading-tight mb-2">
+                      澱粉吃多了？4個方法馬上補救
+                    </CardTitle>
+                  </div>
+                  <div className="text-3xl ml-4">🍚</div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  吃多澱粉後的焦慮和自責，你不是唯一一個。
+                  學會與澱粉和平共處，用智慧吃飯，用溫柔對待自己。
+                </p>
+                <div className="space-y-2 text-sm text-gray-500 mb-4">
+                  <p>• 澱粉是朋友不是敵人</p>
+                  <p>• 4個溫柔的調整方法</p>
+                  <p>• 與澱粉和平共處</p>
+                </div>
+                <div className="space-y-2">
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-blue-200 text-blue-600 hover:bg-blue-50"
+                    onClick={() => handleArticleClick('starch-remedy')}
+                  >
+                    學習補救方法
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                  <div className="grid grid-cols-2 gap-2">
+                    <Button 
+                      variant="ghost" 
+                      size="sm"
+                      className="text-xs text-blue-500 hover:bg-blue-50"
+                      onClick={() => handleArticleClick('starch-remedy', '你害怕的澱粉，其實是你的朋友')}
+                    >
+                      🍚 認識澱粉
+                    </Button>
+                    <Button 
+                      variant="ghost" 
+                      size="sm"
+                      className="text-xs text-blue-500 hover:bg-blue-50"
+                      onClick={() => handleArticleClick('starch-remedy', '不小心吃多了怎麼辦？四個溫柔的調整方法')}
+                    >
+                      💡 補救方法
                     </Button>
                   </div>
                 </div>

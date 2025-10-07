@@ -1030,6 +1030,17 @@ Dr. Crystal Wyllie醫生發出緊急警告：「<span style="background-color: #
             </div>
           </div>
 
+          {/* Article Image */}
+          {article.image && (
+            <div className="w-full">
+              <img 
+                src={article.image} 
+                alt={article.title}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          )}
+
           {/* Article Body */}
           <div className="p-8">
             {/* Table of Contents */}
